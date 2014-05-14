@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Jan 30 08:02:53 2014
+# Process ID: 1584
+# Log file: H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.rdi
+# Journal file: H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab1NumberGuess.tcl -notrace

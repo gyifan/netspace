@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Hamster/Projects/FPGA/Zedboard/ov7670/work/tb_ov7670_top_isim_beh.exe" -prj "C:/Users/Hamster/Projects/FPGA/Zedboard/ov7670/work/tb_ov7670_top_beh.prj" "work.tb_ov7670_top" 

@@ -1,0 +1,89 @@
+/bin/rm -f sink.o source.o wrappers.o crc-api.o crcmodel.o sag-api.o list.o source sink  core* *~ semantic.cache
+gcc -c -g source.c
+gcc -c -g wrappers.c
+gcc -c -g sag-api.c
+gcc -c -g crc-api.c
+gcc -c -g crcmodel.c
+gcc -c -g list.c
+gcc -o source source.o  wrappers.o sag-api.o crc-api.o crcmodel.o list.o
+gcc -c -g sink.c
+gcc -o sink sink.o  wrappers.o crc-api.o crcmodel.o sag-api.o list.o
+
+==========================
+  Starting a new session.
+==========================
+>> |Source|
+   Filename: declaration-of-independence.txt
+   Total File Length: 8282
+--------------------------
+>> |Client|
+   Send pkt #65535
+waiting for response
+>> |Client|
+   Received ACK: pkt #65535
+>> |Client|
+   Send pkt #65535
+waiting for response
+>> |Client|
+   Received ACK: pkt #65535
+<< |Source| End
+
+==========================
+  Starting a new session.
+==========================
+>> |Source|
+   Filename: bode.pgm
+   Total File Length: 571498
+--------------------------
+>> |Client|
+   Send pkt #65535
+waiting for response
+>> |Client|
+   Received ACK: pkt #65535
+>> |Client|
+   Send pkt #0
+waiting for response
+>> |Client|
+   Received ACK: pkt #0
+>> |Client|
+   Send pkt #1
+waiting for response
+>> |Client|
+   Received ACK: pkt #1
+>> |Client|
+   Send pkt #2
+waiting for response
+>> |Client|
+   Received ACK: pkt #2
+>> |Client|
+   Send pkt #3
+waiting for response
+>> |Client|
+   Received ACK: pkt #3
+>> |Client|
+   Send pkt #4
+waiting for response
+>> |Client|
+   Received ACK: pkt #4
+>> |Client|
+   Send pkt #5
+waiting for response
+>> |Client|
+   Received ACK: pkt #5
+>> |Client|
+   Send pkt #6
+waiting for response
+>> |Client|
+   Received ACK: pkt #6
+>> |Client|
+   Send pkt #7
+waiting for response
+>> |Client|
+   Received ACK: pkt #7
+>> |Client|
+   Send pkt #65535
+waiting for response
+>> |Client|
+   Received ACK: pkt #65535
+<< |Source| End
+/bin/rm -f sink.o source.o wrappers.o crc-api.o crcmodel.o sag-api.o list.o source sink  core* *~ semantic.cache

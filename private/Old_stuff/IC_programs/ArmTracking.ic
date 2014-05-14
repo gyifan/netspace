@@ -1,0 +1,130 @@
+#use "xbccamlib.ic"
+#define GRIPPER 0
+#define WRIST 1
+#define ELBOW 2
+#define SHOULDER 3
+
+int position[4];
+int nextPElbow=0;
+int nextPWrist=0;
+int level=0;
+int stop = 0;
+
+
+void main() {
+    init_camera();
+    display_clear();
+    sleep(1.0);
+    
+    enable_servos();
+    reset_arm();
+    sleep(1.0);
+    
+    printf("Arm is ready for use, please select a level: A --> 1; B --> 2.");
+    
+    while((!a_button())&&(!b_button()));
+    
+    beep();
+    
+    if (a_button())
+      level = 1;
+    if (b_button())
+      level = 2;
+    
+    printf("Level %d is selected.\n", level);
+    beep();
+    
+    set_arm_position(level);
+    
+    printf("Please press A to start tracking the plate.");
+    
+    while(!a_button());
+    
+    do
+      track_arm(0,0,146,25000);
+    while(stop != 1);
+    //nextPWrist = get_servo_position(WRIST)-2;
+    //set_servo_position(WRIST,nextPWrist);
+    
+    //wait for press A
+    while(!a_button());
+    
+    set_servo_position(GRIPPER, 10);
+    
+    sleep(2.0);
+    
+    reset_arm();
+    sleep(1.0);
+    disable_servos();
+}
+
+void reset_arm(){
+    position[GRIPPER] = 10;
+    position[WRIST] = 160;
+    position[ELBOW] = 10;
+    position[SHOULDER] = 20;
+    
+    set_servo_position(SHOULDER, position[SHOULDER]);
+    sleep(0.5);
+    set_servo_position(ELBOW, position[ELBOW]);
+    set_servo_position(WRIST, position[WRIST]);
+    set_servo_position(GRIPPER, position[GRIPPER]);
+    
+    printf("ARM Reseted\n");
+}
+
+void set_arm_position(int level){
+    if (level == 1){
+        position[GRIPPER] = 160;
+        position[WRIST] = 10;
+        position[ELBOW] = 60;
+        position[SHOULDER] = 200;
+    } else if(level == 2){
+        position[GRIPPER] = 160;
+        position[WRIST] = 95;
+        position[ELBOW] = 80;
+        position[SHOULDER] = 140;
+    }
+    
+    set_servo_position(GRIPPER, position[GRIPPER]);
+    set_servo_position(WRIST, position[WRIST]);
+    set_servo_position(ELBOW, position[ELBOW]);
+    set_servo_position(SHOULDER, position[SHOULDER]);
+    
+    printf("In Position %d\n", level);
+}
+
+void track_arm(int ch, int i, int d_v, int maxSize){
+    
+    display_clear();
+    track_update();
+    
+    if(track_y(ch,i)>(d_v+5)){
+        nextPElbow=get_servo_position(ELBOW)-5;
+        nextPWrist=get_servo_position(WRIST)-5;
+    } 
+    else if(track_y(ch,i)<(d_v-5)){
+        nextPElbow=get_servo_position(ELBOW)+5;
+        nextPWrist=get_servo_position(WRIST)+5;
+    } 
+    else if(!((track_y(ch,i)>(d_v+5))||(track_y(ch,i)<(d_v-5)))){
+        nextPElbow=get_servo_position(ELBOW);
+        nextPWrist=get_servo_position(WRIST);
+    }
+    
+    set_servo_position(ELBOW,nextPElbow);
+    set_servo_position(WRIST,nextPWrist);
+    
+    if(((track_y(ch,i)>(d_v+10))&&(track_y(ch,i)<(d_v-10)))||(track_size(ch,i)>maxSize)){
+        stop = 1;
+    }
+    printf("%d",stop);
+    printf("track_bbox_left: %d\n", track_bbox_left(0,0));
+    printf("track_bbox_right: %d\n", track_bbox_right(0,0));
+    printf("track_bbox_top: %d\n", track_bbox_top(0,0));
+    printf("track_bbox_bottom: %d\n", track_bbox_bottom(0,0));
+    printf("track_bbox_width: %d\n", track_bbox_width(0,0));
+    printf("track_bbox_height: %d\n", track_bbox_height(0,0));
+    
+    sleep(0.25);
+}

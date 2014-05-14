@@ -1,0 +1,2877 @@
+00:14:52 **** Clean-only build of configuration Debug for project sound ****
+make clean 
+rm -rf  ./src/sound.o  ./src/sound.d  sound.elf.size  sound.elf
+' '
+00:14:53 **** Clean-only build of project sound_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+00:14:53 **** Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling gpiops"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+00:15:38 **** Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:107:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:108:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:44: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:60: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:106: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:162: undefined reference to `outbyte'
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:223: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:190: more undefined references to `outbyte' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [sound.elf] Error 1
+00:19:43 **** Auto Build of project sound_bsp ****
+make -k all 
+'Finished building libraries'
+00:20:20 **** Clean-only build of configuration Debug for project sound ****
+make clean 
+rm -rf  ./src/sound.o  ./src/sound.d  sound.elf.size  sound.elf
+' '
+00:20:21 **** Clean-only build of project sound_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+00:20:22 **** Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling gpiops"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+00:21:06 **** Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:107:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:108:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:44: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:60: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:106: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:162: undefined reference to `outbyte'
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:223: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:190: more undefined references to `outbyte' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [sound.elf] Error 1
+00:21:23 **** Clean-only build of configuration Debug for project sound ****
+make clean 
+rm -rf  ./src/sound.o  ./src/sound.d  sound.elf.size  sound.elf
+' '
+00:21:24 **** Clean-only build of project sound_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+00:21:25 **** Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+Command canceled
+00:22:01 **** Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling gpiops"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+00:22:46 **** Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:107:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:108:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:44: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:60: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:106: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:162: undefined reference to `outbyte'
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:223: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:190: more undefined references to `outbyte' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [sound.elf] Error 1
+00:28:43 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:107:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:108:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:44: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:60: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:106: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:162: undefined reference to `outbyte'
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:223: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:190: more undefined references to `outbyte' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [sound.elf] Error 1
+00:28:47 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:107:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:108:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  28820	   2480	  22676	  53976	   d2d8	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:30:57 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:107:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:108:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:44: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:60: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:106: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:162: undefined reference to `outbyte'
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:223: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:190: more undefined references to `outbyte' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [sound.elf] Error 1
+00:31:12 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `padding':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:44: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outs':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:60: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `outnum':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:106: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o): In function `xil_printf':
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:162: undefined reference to `outbyte'
+H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:223: undefined reference to `outbyte'
+../../sound_bsp/ps7_cortexa9_0/lib\libxil.a(xil_printf.o):H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\sound_bsp\ps7_cortexa9_0\libsrc\standalone_v3_12_a\src/xil_printf.c:190: more undefined references to `outbyte' follow
+collect2.exe: error: ld returned 1 exit status
+make: *** [sound.elf] Error 1
+00:34:27 **** Clean-only build of project sound_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+00:34:27 **** Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling gpiops"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+00:35:12 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31248	   2480	  22676	  56404	   dc54	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:36:07 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:37:01 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:37:15 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31248	   2480	  22676	  56404	   dc54	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:37:24 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31372	   2480	  22676	  56528	   dcd0	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:38:36 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31364	   2480	  22676	  56520	   dcc8	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:39:00 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31364	   2480	  22676	  56520	   dcc8	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:39:14 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:39:48 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31364	   2480	  22676	  56520	   dcc8	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:39:57 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:40:28 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:40:53 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:41:29 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31368	   2480	  22676	  56524	   dccc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:41:36 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:45:37 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  31368	   2480	  22676	  56524	   dccc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:45:45 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:48:04 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:163:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:163:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68768	   3648	  22748	  95164	  173bc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:48:45 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:49:24 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:163:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:163:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68768	   3648	  22748	  95164	  173bc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:50:01 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:163:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:163:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68768	   3648	  22748	  95164	  173bc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:50:08 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:163:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:163:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c:163:1: warning: left shift count >= width of type [enabled by default]
+../src/sound.c:163:84: error: expected expression before ',' token
+make: *** [src/sound.o] Error 1
+00:50:17 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:163:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:163:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c:163:1: warning: left shift count >= width of type [enabled by default]
+../src/sound.c:163:1: warning: format '%llu' expects argument of type 'long long unsigned int', but argument 2 has type 'u32' [-Wformat]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68760	   3648	  22748	  95156	  173b4	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:50:26 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:51:10 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:51:29 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:163:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:163:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68768	   3648	  22748	  95164	  173bc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:51:36 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+00:58:16 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:164:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:164:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68776	   3648	  22748	  95172	  173c4	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:59:09 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:108:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:109:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:110:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:165:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:165:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68784	   3648	  22748	  95180	  173cc	sound.elf
+'Finished building: sound.elf.size'
+' '
+00:59:23 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:00:53 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68848	   3648	  22748	  95244	  1740c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:00:58 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:01:51 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68856	   3648	  22748	  95252	  17414	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:02:18 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:02:52 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:2: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68880	   3648	  22748	  95276	  1742c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:02:58 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68880	   3648	  22748	  95276	  1742c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:03:07 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:04:48 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68896	   3648	  22748	  95292	  1743c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:04:53 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68896	   3648	  22748	  95292	  1743c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:04:56 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:05:26 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:05:32 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:07:03 **** Auto Build of project sound_bsp ****
+make -k all 
+'Finished building libraries'
+01:07:17 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:08:23 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68896	   3648	  22748	  95292	  1743c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:08:33 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:14:29 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68904	   3648	  22748	  95300	  17444	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:14:50 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68920	   3648	  22748	  95316	  17454	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:14:59 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68920	   3648	  22748	  95316	  17454	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:15:12 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68928	   3648	  22748	  95324	  1745c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:15:23 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:17:48 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:18:43 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:167:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68928	   3648	  22748	  95324	  1745c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:19:46 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68960	   3648	  22748	  95356	  1747c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:19:52 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:21:02 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68976	   3648	  22748	  95372	  1748c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:45:25 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:45:55 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68976	   3648	  22748	  95372	  1748c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:46:12 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:47:47 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68992	   3648	  22748	  95388	  1749c	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:47:54 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:49:48 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69000	   3648	  22748	  95396	  174a4	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:49:55 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:52:50 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+01:54:01 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69000	   3648	  22748	  95396	  174a4	sound.elf
+'Finished building: sound.elf.size'
+' '
+01:54:22 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:03:10 **** Auto Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:04:08 **** Auto Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:08:00 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:168:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   3648	  22748	  95380	  17494	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:10:39 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:174:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   3648	  22748	  95380	  17494	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:13:09 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68992	   3648	  22748	  95388	  1749c	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:13:18 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:15:21 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69016	   3648	  22748	  95412	  174b4	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:15:43 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:17:12 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:19:40 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69016	   3648	  22748	  95412	  174b4	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:19:49 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:24:00 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   3648	  22748	  95380	  17494	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:24:32 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   3648	  22748	  95380	  17494	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:24:45 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   3648	  22748	  95380	  17494	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:24:50 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68984	   3648	  22748	  95380	  17494	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:24:57 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:25:51 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68664	   3648	  22748	  95060	  17354	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:25:58 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29128	   2480	  22676	  54284	   d40c	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:26:06 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:27:27 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29128	   2480	  22676	  54284	   d40c	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:29:33 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29128	   2480	  22676	  54284	   d40c	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:29:42 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68664	   3648	  22748	  95060	  17354	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:29:47 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68632	   3648	  22748	  95028	  17334	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:29:54 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:30:53 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68856	   3648	  22748	  95252	  17414	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:31:07 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68856	   3648	  22748	  95252	  17414	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:31:12 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:31:45 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68896	   3648	  22748	  95292	  1743c	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:31:50 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:34:36 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  68952	   3648	  22748	  95348	  17474	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:34:42 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:37:31 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69016	   3648	  22748	  95412	  174b4	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:37:36 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:38:10 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69032	   3648	  22748	  95428	  174c4	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:38:15 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:39:48 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69072	   3648	  22748	  95468	  174ec	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:39:53 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:41:38 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69088	   3648	  22748	  95484	  174fc	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:41:43 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:43:02 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69096	   3648	  22748	  95492	  17504	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:43:07 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:43:51 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   3648	  22748	  95508	  17514	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:44:00 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:44:59 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:175:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   3648	  22748	  95508	  17514	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:49:11 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   3648	  22748	  95508	  17514	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:49:15 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:50:01 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:50:29 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:64:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:64:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:176:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   3648	  22748	  95508	  17514	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:50:34 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:51:28 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29128	   2480	  22676	  54284	   d40c	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:51:49 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:54:28 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:55:38 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29188	   2480	  22676	  54344	   d448	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:55:48 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+02:59:33 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29132	   2480	  22676	  54288	   d410	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:59:48 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29140	   2480	  22676	  54296	   d418	sound.elf
+'Finished building: sound.elf.size'
+' '
+02:59:58 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+03:00:39 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29132	   2480	  22676	  54288	   d410	sound.elf
+'Finished building: sound.elf.size'
+' '
+03:00:48 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:06:24 **** Auto Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling gpiops"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:07:21 **** Auto Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:07:45 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:08:15 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:08:42 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:17:13 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29124	   2480	  22676	  54280	   d408	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:18:12 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29124	   2480	  22676	  54280	   d408	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:18:24 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:19:40 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:20:23 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:22:01 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:29:18 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29120	   2480	  22676	  54276	   d404	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:30:05 **** Auto Build of project sound_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling gpiops"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+14:30:51 **** Auto Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:33:19 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:110:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:111:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29124	   2480	  22676	  54280	   d408	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:38:03 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29248	   2480	  22676	  54404	   d484	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:39:55 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29332	   2480	  22676	  54488	   d4d8	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:41:58 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29156	   2480	  22676	  54312	   d428	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:42:06 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:42:49 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:45:21 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:45:31 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:45:50 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:46:31 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:46:40 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:49:07 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:174:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   3648	  22748	  95508	  17514	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:49:14 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:50:06 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:51:01 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:174:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69112	   3648	  22748	  95508	  17514	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:51:08 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:51:52 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:52:34 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:174:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69152	   3648	  22748	  95548	  1753c	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:52:42 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:53:36 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:174:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69192	   3648	  22748	  95588	  17564	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:53:47 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+14:55:08 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'checkGlobalTimer':
+../src/sound.c:57:1: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+../src/sound.c:57:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:174:1: warning: incompatible implicit declaration of built-in function 'printf' [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69184	   3648	  22748	  95580	  1755c	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:57:42 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29156	   2480	  22676	  54312	   d428	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:59:28 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:111:32: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:112:25: warning: initialization makes pointer from integer without a cast [enabled by default]
+../src/sound.c:113:26: warning: initialization makes pointer from integer without a cast [enabled by default]
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29176	   2480	  22676	  54332	   d43c	sound.elf
+'Finished building: sound.elf.size'
+' '
+14:59:44 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:135:3: error: 'XTimer_Config' undeclared (first use in this function)
+../src/sound.c:135:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/sound.c:160:4: error: 'Global_High_Addr' undeclared (first use in this function)
+../src/sound.c:161:4: error: 'Global_Low_Addr' undeclared (first use in this function)
+make: *** [src/sound.o] Error 1
+15:00:20 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:137:3: error: 'XTimer_Config' undeclared (first use in this function)
+../src/sound.c:137:3: note: each undeclared identifier is reported only once for each function it appears in
+../src/sound.c:162:4: error: 'Global_High_Addr' undeclared (first use in this function)
+../src/sound.c:163:4: error: 'Global_Low_Addr' undeclared (first use in this function)
+../src/sound.c:183:3: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:208:4: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:110:10: warning: variable 'xTimer' set but not used [-Wunused-but-set-variable]
+make: *** [src/sound.o] Error 1
+15:01:05 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:161:4: error: 'XTimer_Config' undeclared (first use in this function)
+../src/sound.c:161:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/sound.c:162:4: error: 'Global_High_Addr' undeclared (first use in this function)
+../src/sound.c:163:4: error: 'Global_Low_Addr' undeclared (first use in this function)
+../src/sound.c:183:3: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:208:4: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:110:10: warning: variable 'xTimer' set but not used [-Wunused-but-set-variable]
+make: *** [src/sound.o] Error 1
+15:02:22 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:176:4: error: 'XTimer_Config' undeclared (first use in this function)
+../src/sound.c:176:4: note: each undeclared identifier is reported only once for each function it appears in
+../src/sound.c:183:29: error: 'Global_High_Addr' undeclared (first use in this function)
+../src/sound.c:183:47: error: 'Global_Low_Addr' undeclared (first use in this function)
+../src/sound.c:183:3: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:208:4: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:110:10: warning: variable 'xTimer' set but not used [-Wunused-but-set-variable]
+make: *** [src/sound.o] Error 1
+15:02:38 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:183:29: error: 'Global_High_Addr' undeclared (first use in this function)
+../src/sound.c:183:29: note: each undeclared identifier is reported only once for each function it appears in
+../src/sound.c:183:47: error: 'Global_Low_Addr' undeclared (first use in this function)
+../src/sound.c:183:3: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:208:4: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+../src/sound.c:110:10: warning: variable 'xTimer' set but not used [-Wunused-but-set-variable]
+make: *** [src/sound.o] Error 1
+15:02:47 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+../src/sound.c: In function 'main':
+../src/sound.c:208:30: error: 'Global_High_Addr' undeclared (first use in this function)
+../src/sound.c:208:30: note: each undeclared identifier is reported only once for each function it appears in
+../src/sound.c:208:48: error: 'Global_Low_Addr' undeclared (first use in this function)
+../src/sound.c:208:4: error: too many arguments to function 'checkGlobalTimer'
+../src/sound.c:44:5: note: declared here
+make: *** [src/sound.o] Error 1
+15:02:54 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29112	   2480	  22660	  54252	   d3ec	sound.elf
+'Finished building: sound.elf.size'
+' '
+15:03:06 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:03:28 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29112	   2480	  22660	  54252	   d3ec	sound.elf
+'Finished building: sound.elf.size'
+' '
+15:03:32 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:04:10 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29112	   2480	  22660	  54252	   d3ec	sound.elf
+'Finished building: sound.elf.size'
+' '
+15:04:15 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:05:13 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:05:23 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:12:47 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29112	   2480	  22660	  54252	   d3ec	sound.elf
+'Finished building: sound.elf.size'
+' '
+15:44:50 **** Auto Build of configuration Debug for project sound ****
+make all 
+'Building file: ../src/sound.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../sound_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sound.d" -MT"src/sound.d" -o "src/sound.o" "../src/sound.c"
+'Finished building: ../src/sound.c'
+' '
+'Building target: sound.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../sound_bsp/ps7_cortexa9_0/lib -o "sound.elf"  ./src/sound.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: sound.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size sound.elf  |tee "sound.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29092	   2480	  22660	  54232	   d3d8	sound.elf
+'Finished building: sound.elf.size'
+' '
+15:46:35 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:52:46 **** Auto Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:52:53 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.
+15:53:59 **** Incremental Build of configuration Debug for project sound ****
+make all 
+make: Nothing to be done for `all'.

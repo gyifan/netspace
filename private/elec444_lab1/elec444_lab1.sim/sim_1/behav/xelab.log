@@ -1,0 +1,33 @@
+Vivado Simulator 2013.4
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2013.4/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L work -L unisims_ver -L unimacro_ver -L secureip --snapshot lab1NumberGuess_tb_behav --prj U:/private/elec444_lab1/elec444_lab1.sim/sim_1/behav/lab1NumberGuess_tb.prj work.lab1NumberGuess_tb work.glbl 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/new/slowclock.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/new/sevenSegCtrl.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/new/guessCounter.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/new/bouncer.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/new/bin2bcd.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/imports/elec444lab1fsm.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/imports/ELEC240Lab3/SevenSegmentDecoder.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sources_1/new/lab1NumberGuess.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/private/elec444_lab1/elec444_lab1.srcs/sim_1/new/lab1NumberGuess_tb.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2013.4/data/verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.slowclock
+Compiling module work.debouncer
+Compiling module work.lab1fsm
+Compiling module work.guessCounter
+Compiling module work.add3
+Compiling module work.bin2bcd
+Compiling module work.SevenSegmenDecoder
+Compiling module work.sevenSegCtrl
+Compiling module work.lab1NumberGuess
+Compiling module work.lab1NumberGuess_tb
+Compiling module work.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot lab1NumberGuess_tb_behav

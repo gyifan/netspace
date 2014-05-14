@@ -1,0 +1,324 @@
+09:38:33.278 INFO  - Processing command line option -hwspec U:/private/ELEC444/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:14:12.741 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:14:14.306 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:14:14.471 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+14:14:14.578 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+14:14:14.579 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+14:14:14.613 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+14:14:14.614 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+14:14:14.618 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+14:14:14.867 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:14:18.052 INFO  - Updating hardware inferred compiler options for sound. 
+14:14:18.054 INFO  - Clearing existing target manager status. 
+14:58:31.768 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:58:51.041 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:58:51.971 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:58:52.004 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+14:58:52.071 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+14:58:52.072 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+14:58:52.108 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+14:58:52.109 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+14:58:52.113 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+14:58:52.216 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:59:42.760 INFO  - Updating MSS for Board Support Package Project: sound_bsp.
+		 The following new driver assignments were made:
+			Peripheral Instance: ps7_uart_1, driver: uartps_v1_05_a.
+ 
+14:59:48.563 INFO  - Updating hardware inferred compiler options for sound. 
+14:59:48.588 INFO  - Clearing existing target manager status. 
+16:24:25.499 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:23:01.384 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+23:23:02.356 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+23:23:02.379 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+23:23:02.453 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+23:23:02.455 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+23:23:02.492 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+23:23:02.493 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+23:23:02.497 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+23:23:02.593 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:23:52.473 INFO  - Updating hardware inferred compiler options for sound. 
+23:23:52.500 INFO  - Clearing existing target manager status. 
+00:48:17.593 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+23:28:05.044 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+23:28:06.731 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+23:28:06.817 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+23:28:58.488 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+23:28:58.490 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+23:28:58.526 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+23:28:58.528 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+23:28:58.533 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+23:28:58.662 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+23:29:01.518 INFO  - Updating hardware inferred compiler options for sound. 
+23:29:01.542 INFO  - Clearing existing target manager status. 
+00:17:00.567 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+00:19:42.528 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+00:19:43.500 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+00:19:43.522 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+00:19:43.580 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+00:19:43.581 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+00:19:43.617 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+00:19:43.618 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+00:19:43.622 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+00:19:43.713 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:19:46.042 INFO  - Updating hardware inferred compiler options for sound. 
+00:19:46.044 INFO  - Clearing existing target manager status. 
+00:21:34.251 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+00:21:59.633 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+00:22:00.576 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+00:22:00.604 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+00:22:00.704 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+00:22:00.706 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+00:22:00.742 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+00:22:00.745 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+00:22:00.750 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+00:22:00.851 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+00:22:46.659 INFO  - Updating hardware inferred compiler options for sound. 
+00:22:46.690 INFO  - Clearing existing target manager status. 
+00:34:27.091 INFO  - Settings changed on project sound_bsp. Triggering a rebuild... 
+00:34:27.854 INFO  - Refreshed build settings on project sound 
+00:36:11.836 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:36:11.936 INFO  - PS initialization will be done as it is not done before. 
+00:36:11.936 INFO  - Running PS initialization.... 
+00:36:12.074 INFO  - ps7_init is completed. 
+00:36:12.174 INFO  - PS Initialization is complete. 
+00:37:05.414 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:39:20.290 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:40:03.317 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:40:33.342 ERROR - Unexpected error while opening JTAG UART:  java.lang.RuntimeException: Error while opening JTAG UART server: MDM Uart NOT Present in the System
+Could not detect MDM peripheral on hardware. Please check:
+    1. If FPGA is configured correctly
+    2. MDM Core is instantiated in the design
+    3. If the correct FPGA is referred, in case of multiple FPGAs
+    4. If the correct MDM is referred, in case of a multiple MDM system
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.startJTAGUARTServer(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.comm.JTAGUARTStreamsProxy.<init>(Unknown Source)
+
+00:40:33.729 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:40:58.909 ERROR - Port COM4 is already in use. 
+00:40:59.300 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:41:42.085 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:45:51.479 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:48:50.840 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:50:28.411 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+00:50:35.662 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:51:16.511 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:51:38.081 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+00:51:40.961 INFO  - Processor reset is completed for ps7_cortexa9_0 
+00:59:24.756 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+00:59:27.053 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:01:00.291 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+01:01:02.106 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:02:19.875 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+01:02:21.951 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:03:13.099 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:05:02.419 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:05:30.663 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:05:34.364 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:06:27.915 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+01:07:02.158 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+01:07:03.019 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+01:07:03.042 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+01:07:03.100 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+01:07:03.101 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+01:07:03.136 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+01:07:03.137 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+01:07:03.141 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+01:07:03.234 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+01:07:05.533 INFO  - Updating hardware inferred compiler options for sound. 
+01:07:05.536 INFO  - Clearing existing target manager status. 
+01:07:23.921 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:08:34.615 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+01:08:36.859 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:15:25.311 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+01:15:27.862 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:17:54.482 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:19:58.601 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:45:31.159 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:46:18.292 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:48:00.289 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:50:01.488 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:52:56.578 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:54:27.836 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:13:24.177 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:15:49.342 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:17:18.285 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:19:54.872 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:25:03.074 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:26:12.186 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:29:59.649 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:31:17.986 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:31:56.275 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:34:48.244 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:37:42.396 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:38:20.752 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:39:59.053 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:41:48.830 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:43:12.993 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:44:06.509 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:49:21.324 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:50:07.115 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:50:40.285 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:51:55.796 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:54:34.499 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:54:34.599 INFO  - PS initialization will be done as it is not done before. 
+02:54:34.599 INFO  - Running PS initialization.... 
+02:54:34.736 INFO  - ps7_init is completed. 
+02:54:34.836 INFO  - PS Initialization is complete. 
+02:55:54.099 INFO  - Processor reset is completed for ps7_cortexa9_0 
+03:00:00.501 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+03:00:02.664 INFO  - Processor reset is completed for ps7_cortexa9_0 
+03:00:54.340 INFO  - Processor reset is completed for ps7_cortexa9_0 
+03:01:28.845 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:06:19.199 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:06:23.897 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:06:24.014 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+14:06:24.092 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+14:06:24.094 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+14:06:24.130 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+14:06:24.131 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+14:06:24.158 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+14:06:24.276 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:07:22.745 INFO  - Updating hardware inferred compiler options for sound. 
+14:07:22.768 INFO  - Clearing existing target manager status. 
+14:07:52.310 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:08:19.364 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:08:45.144 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:08:45.147 INFO  - PS initialization will be done as it is not done before. 
+14:08:45.147 INFO  - Running PS initialization.... 
+14:08:45.289 INFO  - ps7_init is completed. 
+14:08:45.389 INFO  - PS Initialization is complete. 
+14:18:26.450 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:19:42.373 INFO  - FPGA Cable Disconnected. All active launches will be terminated. 
+14:20:25.465 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:20:25.565 INFO  - PS initialization will be done as it is not done before. 
+14:20:25.565 INFO  - Running PS initialization.... 
+14:20:25.690 INFO  - ps7_init is completed. 
+14:20:25.699 INFO  - PS Initialization is complete. 
+14:20:25.793 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: Lost communication with jtag cable. Run "xdisconnect -cable"
+    and start over again
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.runPs7Init(Unknown Source)
+
+14:20:37.373 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:20:37.373 ERROR - Timeout occured while waiting to get reply for command "xdisconnect 64" 
+14:20:37.373 ERROR - Disconnect target failed. 
+14:20:41.918 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:20:41.918 ERROR - Timeout occured while waiting to get reply for command "targets 64" 
+14:20:41.918 ERROR - Unexpected error while launching program. java.lang.RuntimeException: 
+	at com.xilinx.sdk.targetmanager.internal.TM.setResetOnRun(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:21:09.298 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:21:09.298 ERROR - Timeout occured while waiting to get reply for command "targets 64" 
+14:21:17.451 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:21:17.451 ERROR - Timeout occured while waiting to get reply for command "xstop 64" 
+14:21:41.920 INFO  - Time out for XMD transaction is 60000
+If you want to increase the timeout value, goto Windows-> Preferences -> Xilinx SDK -> XMD Startup 
+14:21:41.920 ERROR - Timeout occured while waiting to get reply for command "targets 64" 
+14:22:03.706 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:22:03.708 INFO  - PS initialization will be done as it is not done before. 
+14:22:03.709 INFO  - Running PS initialization.... 
+14:22:03.846 INFO  - ps7_init is completed. 
+14:22:03.946 INFO  - PS Initialization is complete. 
+14:29:22.241 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+14:30:03.605 INFO  - Processing command line option -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:30:04.736 INFO  - The hardware specification for project 'hw_platform_0' is different from H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml. 
+14:30:04.759 INFO  - Copied contents of H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+14:30:04.816 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+14:30:04.817 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+14:30:04.851 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+14:30:04.853 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+14:30:04.856 INFO  - Copied contents of H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+14:30:04.966 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+14:30:53.132 INFO  - Updating hardware inferred compiler options for sound. 
+14:30:53.172 INFO  - Clearing existing target manager status. 
+14:42:11.240 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:42:11.340 INFO  - PS initialization will be done as it is not done before. 
+14:42:11.340 INFO  - Running PS initialization.... 
+14:42:11.480 INFO  - ps7_init is completed. 
+14:42:11.580 INFO  - PS Initialization is complete. 
+14:42:53.816 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:45:26.639 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:45:33.739 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:45:33.741 INFO  - PS initialization will be done as it is not done before. 
+14:45:33.742 INFO  - Running PS initialization.... 
+14:45:33.876 INFO  - ps7_init is completed. 
+14:45:33.976 INFO  - PS Initialization is complete. 
+14:45:52.512 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:45:55.171 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:46:35.360 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+14:46:42.161 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:46:42.261 INFO  - PS initialization will be done as it is not done before. 
+14:46:42.261 INFO  - Running PS initialization.... 
+14:46:42.401 INFO  - ps7_init is completed. 
+14:46:42.501 INFO  - PS Initialization is complete. 
+14:49:17.023 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:50:08.647 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:51:09.576 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:51:11.683 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:51:54.623 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:52:44.427 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:52:46.354 INFO  - Processor reset is completed for ps7_cortexa9_0 
+14:53:48.945 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+14:53:50.775 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:03:08.815 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:03:34.071 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:03:35.796 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:04:17.767 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:05:17.022 ERROR - Unexpected error while launching program. com.xilinx.sdk.targetmanager.TMException: 
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+
+	at com.xilinx.sdk.targetmanager.internal.TM.connectToProcessor(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+15:05:25.722 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:05:25.822 INFO  - PS initialization will be done as it is not done before. 
+15:05:25.822 INFO  - Running PS initialization.... 
+15:05:25.958 INFO  - ps7_init is completed. 
+15:05:26.058 INFO  - PS Initialization is complete. 
+15:46:37.866 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:46:37.966 INFO  - PS initialization will be done as it is not done before. 
+15:46:37.966 INFO  - Running PS initialization.... 
+15:46:38.102 INFO  - ps7_init is completed. 
+15:46:38.202 INFO  - PS Initialization is complete. 
+15:52:55.462 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+15:52:56.839 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:54:01.648 INFO  - Processor reset is completed for ps7_cortexa9_0 
+15:57:28.528 ERROR - Unable to disconnect from existing targets java.lang.NullPointerException
+	at com.xilinx.sdk.targetmanager.internal.json.XMDJSONProcess.issueCommand(Unknown Source)
+	at com.xilinx.sdk.targetmanager.internal.TM.disconnectTarget(Unknown Source)
+
+15:57:28.529 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

@@ -1,0 +1,15 @@
+#
+# This is a shell script that demonstrate the CRC lab
+# CSCI 363 Computer Networks
+# Yifan Ge
+# 4/15/2014
+#
+make clean
+make
+./sink 14017 &
+./source localhost declaration-of-independence.txt
+sleep 1 #Prevent overlap
+./source localhost bode.pgm
+killall sink
+make clean
+#end

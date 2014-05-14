@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "work" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "keypadControl_tb_behav" --prj "U:/private/keypadCtrl/keypadCtrl.sim/sim_1/behav/keypadControl_tb.prj" "work.keypadControl_tb" "work.glbl" 

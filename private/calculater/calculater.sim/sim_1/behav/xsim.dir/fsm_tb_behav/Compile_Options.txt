@@ -1,0 +1,1 @@
+--debug "typical" --relax -L "work" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "fsm_tb_behav" --prj "U:/private/calculater/calculater.sim/sim_1/behav/fsm_tb.prj" "work.fsm_tb" "work.glbl" 

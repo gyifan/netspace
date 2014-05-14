@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DARoots Version="1" Minor="30">
+  <FileSet Name="bram_buf" Type="BlockSrcs" RelSrcDir="$PSRCDIR/bram_buf">
+    <Config>
+      <Option Name="TopModule" Val="bram_buf"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/axi_bram_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/myip_1.0"/>
+      <Option Name="IPRepoPath" Val="$PPRDIR/TestIP_1.0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+</DARoots>

@@ -1,0 +1,19 @@
+CC     = gcc
+CFLAGS = -g
+LFLAGS =
+
+HDR    = crcmode.h
+SRC    = crcmodel.c crctest.c
+OBJ    = crcmodel.o crctest.o
+EXE    = crctest
+
+all: $(EXE)
+
+%.o: %.c %.h
+	$(CC) -c $(CLFAGS) $<
+
+$(EXE): $(OBJ)
+	$(CC) $(LFLAGS) $(OBJ) -o $(EXE)
+
+clean:
+	/bin/rm -f *.o *~ core $(EXE)

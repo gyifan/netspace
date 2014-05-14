@@ -1,0 +1,56 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win64) Build 353583 Mon Dec  9 17:49:19 MST 2013
+| Date         : Thu Feb 27 10:40:38 2014
+| Host         : DANA307-08 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file TestIP_v1_0_control_sets_placed.rpt
+| Design       : TestIP_v1_0
+| Device       : xc7z020
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     3 |
+| Minimum Number of register sites lost to control set restrictions |     7 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             133 |           48 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               4 |            2 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              32 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+---------------------------------------+---------------------------------+------------------+----------------+
+|       Clock Signal      |             Enable Signal             |         Set/Reset Signal        | Slice Load Count | Bel Load Count |
++-------------------------+---------------------------------------+---------------------------------+------------------+----------------+
+|  s00_axi_aclk_IBUF_BUFG |                                       | TestIP_v1_0_S00_AXI_inst/p_0_in |                2 |              4 |
+|  s00_axi_aclk_IBUF_BUFG | TestIP_v1_0_S00_AXI_inst/slv_reg_rden | TestIP_v1_0_S00_AXI_inst/p_0_in |               21 |             32 |
+|  s00_axi_aclk_IBUF_BUFG |                                       |                                 |               48 |            133 |
++-------------------------+---------------------------------------+---------------------------------+------------------+----------------+
+
+

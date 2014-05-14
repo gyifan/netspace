@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="color_map_synth_1" LaunchDir="U:/public/Lab5_Files_Ge/vga_display/vga_display.runs/color_map_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="U:/public/Lab5_Files_Ge/vga_display/vga_display.runs/synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="color_map_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="U:/public/Lab5_Files_Ge/vga_display/vga_display.runs/impl_1" FlowId="Vivado Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+	</Run>
+</Runs>
+

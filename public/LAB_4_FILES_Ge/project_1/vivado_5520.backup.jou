@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Tue Feb 25 23:25:28 2014
+# Process ID: 5264
+# Log file: H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/vivado.log
+# Journal file: H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.xpr}
+open_bd_design {H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd}
+export_hardware [get_files H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd]
+launch_sdk -workspace H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml
+startgroup
+set_property -dict [list CONFIG.preset {ZedBoard}] [get_bd_cells processing_system7_0]
+set_property -dict [list CONFIG.PCW_ENET0_PERIPHERAL_ENABLE {0} CONFIG.PCW_SD0_PERIPHERAL_ENABLE {0} CONFIG.PCW_USB0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {0} CONFIG.PCW_EN_CLK0_PORT {0} CONFIG.PCW_EN_RST0_PORT {0} CONFIG.PCW_UIPARAM_DDR_ENABLE {0} CONFIG.PCW_QSPI_PERIPHERAL_ENABLE {0} CONFIG.PCW_TTC0_PERIPHERAL_ENABLE {0}] [get_bd_cells processing_system7_0]
+endgroup
+save_bd_design
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+export_hardware [get_files H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd]
+launch_sdk -workspace H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml
+export_hardware [get_files H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd]
+launch_sdk -workspace H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml
+export_hardware [get_files H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd]
+launch_sdk -workspace H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml

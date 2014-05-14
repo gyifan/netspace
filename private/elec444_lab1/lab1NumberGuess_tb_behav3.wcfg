@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="lab1NumberGuess_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="lab1NumberGuess_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="/lab1NumberGuess_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/slowClock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">slowClock</obj_property>
+      <obj_property name="ObjectShortName">slowClock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/enter" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enter</obj_property>
+      <obj_property name="ObjectShortName">enter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/enterOutput" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enterOutput</obj_property>
+      <obj_property name="ObjectShortName">enterOutput</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/switches" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">switches[5:0]</obj_property>
+      <obj_property name="ObjectShortName">switches[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/anodes" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">anodes[1:0]</obj_property>
+      <obj_property name="ObjectShortName">anodes[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/cathodes" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">cathodes[6:0]</obj_property>
+      <obj_property name="ObjectShortName">cathodes[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/redLED" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">redLED</obj_property>
+      <obj_property name="ObjectShortName">redLED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/greenLED" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">greenLED</obj_property>
+      <obj_property name="ObjectShortName">greenLED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/isLow" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isLow</obj_property>
+      <obj_property name="ObjectShortName">isLow</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/isEqual" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isEqual</obj_property>
+      <obj_property name="ObjectShortName">isEqual</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/p1Number" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p1Number[5:0]</obj_property>
+      <obj_property name="ObjectShortName">p1Number[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/p2Guess" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p2Guess[5:0]</obj_property>
+      <obj_property name="ObjectShortName">p2Guess[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/counter/countValue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">countValue[5:0]</obj_property>
+      <obj_property name="ObjectShortName">countValue[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider25" type="divider">
+      <obj_property name="label">fsm</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/fsm/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/fsm/nextState" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextState[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/fsm/redLED" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">redLED</obj_property>
+      <obj_property name="ObjectShortName">redLED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/fsm/greenLED" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">greenLED</obj_property>
+      <obj_property name="ObjectShortName">greenLED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/fsm/isGuessDisplayed" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isGuessDisplayed</obj_property>
+      <obj_property name="ObjectShortName">isGuessDisplayed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/fsm/isIncrementCount" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">isIncrementCount</obj_property>
+      <obj_property name="ObjectShortName">isIncrementCount</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider180" type="divider">
+      <obj_property name="label">bouncer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/debouncer_enter/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">state[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/debouncer_enter/nextState" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nextState[1:0]</obj_property>
+      <obj_property name="ObjectShortName">nextState[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/debouncer_enter/inputButton" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inputButton</obj_property>
+      <obj_property name="ObjectShortName">inputButton</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/debouncer_enter/outputButton" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">outputButton</obj_property>
+      <obj_property name="ObjectShortName">outputButton</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/debouncer_enter/outputButton_prev" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">outputButton_prev</obj_property>
+      <obj_property name="ObjectShortName">outputButton_prev</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/ones" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ones[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/lab1NumberGuess_tb/lab1/tens" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tens[6:0]</obj_property>
+      <obj_property name="ObjectShortName">tens[6:0]</obj_property>
+   </wvobject>
+</wave_config>

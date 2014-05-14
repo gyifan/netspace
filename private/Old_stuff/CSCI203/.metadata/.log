@@ -1,0 +1,33 @@
+!SESSION 2010-09-14 21:39:11.652 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_20
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/GALEN/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/GALEN/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-09-14 21:41:22.741
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2010-09-14 21:42:21.884 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_20
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/GALEN/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/GALEN/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-09-14 21:42:36.427
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2010-09-16 01:49:49.481 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_20
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/GALEN/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/GALEN/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2010-09-16 01:50:12.838
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 4 380 2010-09-16 02:28:52.697
+!MESSAGE The resource tree is locked for modifications.

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Feb 19 17:04:14 2014
+# Process ID: 6364
+# Log file: U:/private/psTest/psTest.runs/impl_1/pstest_wrapper.rdi
+# Journal file: U:/private/psTest/psTest.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pstest_wrapper.tcl -notrace

@@ -1,0 +1,150 @@
+02:43:52 **** Build of project vga_display_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+02:45:00 **** Build of configuration Debug for project vga_display ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: vga_display.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vga_display_bsp/ps7_cortexa9_0/lib -o "vga_display.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_display.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vga_display.elf  |tee "vga_display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  22612	  46580	   b5f4	vga_display.elf
+'Finished building: vga_display.elf.size'
+' '
+02:47:04 **** Auto Build of configuration Debug for project vga_display ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:50:6: error: conflicting types for 'print'
+In file included from ../../vga_display_bsp/ps7_cortexa9_0/include/xil_io.h:74:0,
+                 from ../src/helloworld.c:36:
+../../vga_display_bsp/ps7_cortexa9_0/include/xil_printf.h:39:6: note: previous declaration of 'print' was here
+make: *** [src/helloworld.o] Error 1
+02:47:33 **** Auto Build of configuration Debug for project vga_display ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: vga_display.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vga_display_bsp/ps7_cortexa9_0/lib -o "vga_display.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `abs_c':
+U:\public\Lab5_Files_Ge\vga_display\vga_display.sdk\SDK\SDK_Export\vga_display\Debug/../src/helloworld.c:52: undefined reference to `pow'
+U:\public\Lab5_Files_Ge\vga_display\vga_display.sdk\SDK\SDK_Export\vga_display\Debug/../src/helloworld.c:52: undefined reference to `pow'
+U:\public\Lab5_Files_Ge\vga_display\vga_display.sdk\SDK\SDK_Export\vga_display\Debug/../src/helloworld.c:52: undefined reference to `sqrt'
+collect2.exe: error: ld returned 1 exit status
+make: *** [vga_display.elf] Error 1
+02:48:03 **** Clean-only build of configuration Debug for project vga_display ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  vga_display.elf.size  vga_display.elf
+' '
+02:48:03 **** Auto Build of configuration Debug for project vga_display ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: vga_display.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vga_display_bsp/ps7_cortexa9_0/lib -o "vga_display.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_display.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vga_display.elf  |tee "vga_display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30204	   1104	  22612	  53920	   d2a0	vga_display.elf
+'Finished building: vga_display.elf.size'
+' '
+02:48:10 **** Clean-only build of configuration Debug for project vga_display ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  vga_display.elf.size  vga_display.elf
+' '
+02:48:11 **** Auto Build of configuration Debug for project vga_display ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../vga_display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: vga_display.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../vga_display_bsp/ps7_cortexa9_0/lib -o "vga_display.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: vga_display.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size vga_display.elf  |tee "vga_display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30204	   1104	  22612	  53920	   d2a0	vga_display.elf
+'Finished building: vga_display.elf.size'
+' '
+02:48:56 **** Incremental Build of configuration Debug for project vga_display ****
+make all 
+make: Nothing to be done for `all'.
+02:50:02 **** Incremental Build of configuration Debug for project vga_display ****
+make all 
+make: Nothing to be done for `all'.
+02:50:17 **** Incremental Build of configuration Debug for project vga_display ****
+make all 
+make: Nothing to be done for `all'.

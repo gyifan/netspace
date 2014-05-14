@@ -1,0 +1,571 @@
+12:38:29 **** Build of project juliaSetComp_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+12:39:40 **** Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22872	   1096	  22612	  46580	   b5f4	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+12:41:23 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+12:45:31 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+12:48:53 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+12:51:06 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `abs_c':
+U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\juliaSetComp\Debug/../src/helloworld.c:55: undefined reference to `pow'
+U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\juliaSetComp\Debug/../src/helloworld.c:55: undefined reference to `pow'
+U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\juliaSetComp\Debug/../src/helloworld.c:55: undefined reference to `sqrt'
+./src/helloworld.o: In function `main':
+U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\juliaSetComp\Debug/../src/helloworld.c:97: undefined reference to `pow'
+U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\juliaSetComp\Debug/../src/helloworld.c:97: undefined reference to `pow'
+U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\juliaSetComp\Debug/../src/helloworld.c:101: undefined reference to `log'
+collect2.exe: error: ld returned 1 exit status
+make: *** [juliaSetComp.elf] Error 1
+12:56:59 **** Clean-only build of configuration Debug for project juliaSetComp ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  juliaSetComp.elf.size  juliaSetComp.elf
+' '
+12:57:00 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69452	   2264	  22684	  94400	  170c0	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+12:57:07 **** Clean-only build of configuration Debug for project juliaSetComp ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  juliaSetComp.elf.size  juliaSetComp.elf
+' '
+12:57:07 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69452	   2264	  22684	  94400	  170c0	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+12:58:57 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69452	   2264	  22684	  94400	  170c0	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+13:00:01 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69156	   2264	  22684	  94104	  16f98	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+13:01:15 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69156	   2264	  22684	  94104	  16f98	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+13:05:06 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69276	   2264	  22684	  94224	  17010	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+13:05:17 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+13:49:56 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69292	   2264	  22684	  94240	  17020	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+13:50:12 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:03:57 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:03:58 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:03:59 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:04:00 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:06:14 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:26: error: 'offset_color' undeclared (first use in this function)
+../src/helloworld.c:109:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:26: error: 'offset_row' undeclared (first use in this function)
+../src/helloworld.c:111:26: error: 'offset_col' undeclared (first use in this function)
+make: *** [src/helloworld.o] Error 1
+01:06:47 **** Clean-only build of configuration Debug for project juliaSetComp ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  juliaSetComp.elf.size  juliaSetComp.elf
+' '
+01:06:47 **** Clean-only build of project juliaSetComp_bsp ****
+make -k clean 
+rm -rf ps7_cortexa9_0
+01:06:59 **** Build of project juliaSetComp_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+01:08:14 **** Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:109:26: error: 'offset_color' undeclared (first use in this function)
+../src/helloworld.c:109:26: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:110:26: error: 'offset_row' undeclared (first use in this function)
+../src/helloworld.c:111:26: error: 'offset_col' undeclared (first use in this function)
+make: *** [src/helloworld.o] Error 1
+01:08:50 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.d" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69292	   2264	  22684	  94240	  17020	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:19:01 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:72:26: error: expected ')' before ';' token
+../src/helloworld.c:76:26: error: expected ')' before ';' token
+../src/helloworld.c:68:12: warning: unused variable 'k' [-Wunused-variable]
+../src/helloworld.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+01:19:47 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:76:26: error: expected ')' before ';' token
+../src/helloworld.c:68:12: warning: unused variable 'k' [-Wunused-variable]
+../src/helloworld.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [src/helloworld.o] Error 1
+01:19:58 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:68:12: warning: unused variable 'k' [-Wunused-variable]
+../src/helloworld.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27736	   1096	  22612	  51444	   c8f4	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:20:08 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:79:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  27736	   1096	  22612	  51444	   c8f4	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:22:04 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:80:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30100	   1104	  22612	  53816	   d238	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:27:06 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:28:26 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30132	   1104	  22612	  53848	   d258	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:28:32 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:30:12 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:38:45 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:38:45 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:38:46 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+'Finished building libraries'
+01:38:49 **** Auto Build of project juliaSetComp_bsp ****
+make -k all 
+libgen -hw ../hw_platform_0/system.xml\
+	       \
+	       -pe ps7_cortexa9_0 \
+	       -log libgen.log \
+	       system.mss
+libgen
+Xilinx EDK 2013.4 Build EDK_2013.4.20131205
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../hw_platform_0/system.xml -pe ps7_cortexa9_0 -log
+libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+Running generate.
+Running post_generate.
+Running include - 'make -s include "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+
+Running libs - 'make -s libs "COMPILER=arm-xilinx-eabi-gcc"
+"ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS= -O2 -c"
+"EXTRA_COMPILER_FLAGS=-g"'.
+"Compiling standalone"
+arm-xilinx-eabi-ar: creating ../../../lib/libxil.a
+"Compiling devcfg"
+"Compiling dmaps"
+"Compiling scugic"
+"Compiling scutimer"
+"Compiling scuwdt"
+"Compiling uartps"
+"Compiling xadcps"
+"Compiling cpu_cortexa9"
+Running execs_generate.
+'Finished building libraries'
+01:40:14 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:40:35 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:41:46 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:44:33 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:44:45 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:45:23 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:46:17 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:53:23 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:53:46 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:81:1: warning: control reaches end of non-void function [-Wreturn-type]
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30132	   1104	  22612	  53848	   d258	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:54:02 **** Auto Build of configuration Debug for project juliaSetComp ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: ARM gcc compiler'
+arm-xilinx-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -I../../juliaSetComp_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.d" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: juliaSetComp.elf'
+'Invoking: ARM gcc linker'
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../juliaSetComp_bsp/ps7_cortexa9_0/lib -o "juliaSetComp.elf"  ./src/helloworld.o ./src/platform.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: juliaSetComp.elf'
+' '
+'Invoking: ARM Print Size'
+arm-xilinx-eabi-size juliaSetComp.elf  |tee "juliaSetComp.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  30132	   1104	  22612	  53848	   d258	juliaSetComp.elf
+'Finished building: juliaSetComp.elf.size'
+' '
+01:54:12 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:54:29 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.
+01:55:28 **** Incremental Build of configuration Debug for project juliaSetComp ****
+make all 
+make: Nothing to be done for `all'.

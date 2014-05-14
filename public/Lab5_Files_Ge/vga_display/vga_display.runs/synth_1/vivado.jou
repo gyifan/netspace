@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Mar 13 02:34:51 2014
+# Process ID: 4360
+# Log file: U:/public/Lab5_Files_Ge/vga_display/vga_display.runs/synth_1/system_top.rds
+# Journal file: U:/public/Lab5_Files_Ge/vga_display/vga_display.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fsm_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fsm_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="34" />
+   <wvobject fp_name="/fsm_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/fsm_inst/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/fsm_inst/nstate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">nstate[2:0]</obj_property>
+      <obj_property name="ObjectShortName">nstate[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/key" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">key[3:0]</obj_property>
+      <obj_property name="ObjectShortName">key[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/valid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/result" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">result[15:0]</obj_property>
+      <obj_property name="ObjectShortName">result[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/resetCalc" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">resetCalc</obj_property>
+      <obj_property name="ObjectShortName">resetCalc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/inputOne" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inputOne[3:0]</obj_property>
+      <obj_property name="ObjectShortName">inputOne[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/enableOne" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enableOne</obj_property>
+      <obj_property name="ObjectShortName">enableOne</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/inputTwo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inputTwo[3:0]</obj_property>
+      <obj_property name="ObjectShortName">inputTwo[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/enableTwo" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enableTwo</obj_property>
+      <obj_property name="ObjectShortName">enableTwo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/op" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">op</obj_property>
+      <obj_property name="ObjectShortName">op</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/enableOp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">enableOp</obj_property>
+      <obj_property name="ObjectShortName">enableOp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/inputOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">inputOut[3:0]</obj_property>
+      <obj_property name="ObjectShortName">inputOut[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/validInput" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">validInput</obj_property>
+      <obj_property name="ObjectShortName">validInput</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/resultOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">resultOut[15:0]</obj_property>
+      <obj_property name="ObjectShortName">resultOut[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/validResult" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">validResult</obj_property>
+      <obj_property name="ObjectShortName">validResult</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/clear" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clear</obj_property>
+      <obj_property name="ObjectShortName">clear</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/validSig" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">validSig</obj_property>
+      <obj_property name="ObjectShortName">validSig</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider47" type="divider">
+      <obj_property name="label">Shift</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftOne/shift" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shift[3:0]</obj_property>
+      <obj_property name="ObjectShortName">shift[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftOne/one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">one[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftOne/ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ten[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftOne/hund" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hund[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hund[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/paramOne" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">paramOne[15:0]</obj_property>
+      <obj_property name="ObjectShortName">paramOne[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/paramTwo" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">paramTwo[15:0]</obj_property>
+      <obj_property name="ObjectShortName">paramTwo[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/inputOneVacant" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inputOneVacant</obj_property>
+      <obj_property name="ObjectShortName">inputOneVacant</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/inputTwoVacant" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">inputTwoVacant</obj_property>
+      <obj_property name="ObjectShortName">inputTwoVacant</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider360" type="divider">
+      <obj_property name="label">shiftSig</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftTwo/one" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">one[3:0]</obj_property>
+      <obj_property name="ObjectShortName">one[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftTwo/ten" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ten[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ten[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftTwo/hund" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">hund[3:0]</obj_property>
+      <obj_property name="ObjectShortName">hund[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fsm_tb/shiftTwo/shift" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">shift[3:0]</obj_property>
+      <obj_property name="ObjectShortName">shift[3:0]</obj_property>
+   </wvobject>
+</wave_config>

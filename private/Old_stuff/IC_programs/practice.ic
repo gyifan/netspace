@@ -1,0 +1,17 @@
+/*void main() {
+    display_clear();
+    printf("Hello XBC!!\n");
+    sleep(4.0);
+    printf("Goodbye XBC!!");
+}
+*/
+
+void main() {
+    fd(0);
+    sleep(1.0);
+    bk(0);
+    sleep(2.0);
+    fd(0);
+    sleep(1.0);
+    ao();
+}

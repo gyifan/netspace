@@ -1,0 +1,103 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win64) Build 353583 Mon Dec  9 17:49:19 MST 2013
+| Date         : Thu Feb 13 10:57:57 2014
+| Host         : DANA307-07 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_control_sets -verbose -file keypadCalculatorOled_control_sets_placed.rpt
+| Design       : keypadCalculatorOled
+| Device       : xc7z020
+-------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    50 |
+| Minimum Number of register sites lost to control set restrictions |   148 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              86 |           36 |
+| No           | No                    | Yes                    |               3 |            2 |
+| No           | Yes                   | No                     |              44 |           12 |
+| Yes          | No                    | No                     |             206 |           91 |
+| Yes          | No                    | Yes                    |              32 |           12 |
+| Yes          | Yes                   | No                     |             257 |          108 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------+---------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|                           Clock Signal                          |                               Enable Signal                               |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------+---------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  clk_BUFG                                                       |                                                                           | rst_IBUF                                                      |                2 |              3 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/SPI_COMP/temp_sdo                                   | oledCtrl_inst/Example/SPI_COMP/n_0_shift_counter[3]_i_1__0    |                1 |              4 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_temp_page_reg[1]_i_2                            | oledCtrl_inst/Example/n_0_temp_page[1]_i_1                    |                2 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftTwo/SingleClkSigGen_one/E[0]   | keypadCalculator_inst/keypadController_inst/AR[0]             |                2 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftTwo/SingleClkSigGen_three/E[0] | keypadCalculator_inst/keypadController_inst/AR[0]             |                2 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftTwo/SingleClkSigGen_two/E[0]   | keypadCalculator_inst/keypadController_inst/AR[0]             |                2 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftTwo/E[0]                       | keypadCalculator_inst/keypadController_inst/AR[0]             |                1 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftOne/SingleClkSigGen_one/E[0]   | keypadCalculator_inst/keypadController_inst/AR[0]             |                1 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftOne/SingleClkSigGen_three/E[0] | keypadCalculator_inst/keypadController_inst/AR[0]             |                2 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftOne/SingleClkSigGen_two/E[0]   | keypadCalculator_inst/keypadController_inst/AR[0]             |                1 |              4 |
+|  clk_BUFG                                                       | keypadCalculator_inst/calculator_inst/shiftOne/E[0]                       | keypadCalculator_inst/keypadController_inst/AR[0]             |                1 |              4 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/E[0]                                                | rst_IBUF                                                      |                2 |              4 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/SPI_COMP/temp_sdo                                      | oledCtrl_inst/Init/SPI_COMP/n_0_shift_counter[3]_i_1          |                1 |              4 |
+|  keypadCalculator_inst/keypadController_inst/slowest/slowestClk | keypadCalculator_inst/keypadController_inst/debouncer_3/E[0]              |                                                               |                1 |              4 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][4][4]_i_2                       | oledCtrl_inst/Example/n_0_input_screen[2][4][4]_i_1           |                1 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][6][4]_i_2                       | oledCtrl_inst/Example/n_0_input_screen[2][6][4]_i_1           |                1 |              5 |
+|  clk_BUFG                                                       |                                                                           | oledCtrl_inst/Init/SPI_COMP/n_0_counter[4]_i_1                |                1 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/DELAY_COMP/n_0_current_state[27]_i_1                   | rst_IBUF                                                      |                1 |              5 |
+|  clk_BUFG                                                       |                                                                           | oledCtrl_inst/Example/SPI_COMP/n_0_counter[4]_i_1__0          |                1 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][5][4]_i_2                       | oledCtrl_inst/Example/n_0_input_screen[2][5][4]_i_1           |                1 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][7][4]_i_1                       |                                                               |                2 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][3][4]_i_1                       |                                                               |                3 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][1][4]_i_2                       | oledCtrl_inst/Example/n_0_input_screen[2][1][4]_i_1           |                2 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/DELAY_COMP/n_0_current_state[27]_i_1__0             | rst_IBUF                                                      |                1 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][0][4]_i_1                       |                                                               |                2 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_input_screen[2][2][4]_i_2                       | oledCtrl_inst/Example/n_0_input_screen[2][2][4]_i_1           |                1 |              5 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_temp_page_reg[1]_i_2                            |                                                               |                5 |              6 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/SPI_COMP/n_0_FSM_onehot_current_state[6]_i_1__0     | rst_IBUF                                                      |                3 |              7 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/n_0_after_state[81]_i_1                                | oledCtrl_inst/Init/n_0_after_state[40]_i_1                    |                5 |              7 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/SPI_COMP/n_0_FSM_onehot_current_state[6]_i_1           | rst_IBUF                                                      |                3 |              7 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_temp_spi_data[7]_i_1                            |                                                               |                2 |              8 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/n_0_temp_spi_data[7]_i_1__0                            |                                                               |                5 |              8 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/SPI_COMP/n_0_shift_register[7]_i_1                     |                                                               |                1 |              8 |
+|  keypadCalculator_inst/slowclock_inst/slowClock                 |                                                                           |                                                               |                1 |              8 |
+|  clk_BUFG                                                       | keypadCalculator_inst/keypadController_inst/debouncer_1/E[0]              |                                                               |                2 |              8 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/SPI_COMP/n_0_shift_register[7]_i_1__0               |                                                               |                1 |              8 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_temp_addr[9]_i_1                                |                                                               |                3 |             10 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_temp_index[3]_i_1                               |                                                               |                6 |             12 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/DELAY_COMP/n_0_ms_counter[0]_i_1__0                 | oledCtrl_inst/Example/DELAY_COMP/n_0_current_state[27]_i_2__1 |                3 |             12 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/DELAY_COMP/n_0_ms_counter[0]_i_1                       | oledCtrl_inst/Init/DELAY_COMP/n_0_current_state[27]_i_2       |                3 |             12 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/O13                                                 | keypadCalculator_inst/calculator_inst/fsm_inst/O32            |               13 |             14 |
+|  clk_BUFG                                                       |                                                                           | oledCtrl_inst/Init/DELAY_COMP/n_0_current_state[27]_i_2       |                5 |             17 |
+|  clk_BUFG                                                       |                                                                           | oledCtrl_inst/Example/DELAY_COMP/n_0_current_state[27]_i_2__1 |                5 |             17 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/SPI_COMP/O1                                         |                                                               |               13 |             27 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/SPI_COMP/O1                                         | oledCtrl_inst/Example/current_state[85]                       |               18 |             31 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/n_0_after_state[84]_i_1                             |                                                               |               24 |             44 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/n_0_after_state[81]_i_1                                |                                                               |               21 |             48 |
+|  clk_BUFG                                                       | oledCtrl_inst/Example/O9                                                  | oledCtrl_inst/Example/n_0_current_screen[2][0][4]_i_1         |               13 |             52 |
+|  clk_BUFG                                                       | oledCtrl_inst/Init/SPI_COMP/E[0]                                          | rst_IBUF                                                      |               33 |             64 |
+|  clk_BUFG                                                       |                                                                           |                                                               |               35 |             78 |
++-----------------------------------------------------------------+---------------------------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+
+

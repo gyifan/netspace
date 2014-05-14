@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="9">
+	<Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7z020clg484-1" LaunchPart="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth_1" LaunchTime="1391636236">
+		<File Type="RDS-UTIL" Name="keypadTest_utilization_synth.rpt"/>
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+		<File Type="RDS-UTIL-PB" Name="keypadTest_utilization_synth.pb"/>
+		<File Type="RDS-DCP" Name="keypadTest.dcp"/>
+		<File Type="VDS-TIMINGSUMMARY" Name="keypadTest_timing_summary_synth.rpt"/>
+		<File Type="VDS-TIMING-PB" Name="keypadTest_timing_summary_synth.pb"/>
+		<File Type="PA-TCL" Name="keypadTest.tcl"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+		<File Type="RDS-RDS" Name="keypadTest.rds"/>
+	</Run>
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SynthRun="synth_1" Part="xc7z020clg484-1" LaunchPart="xc7z020clg484-1" ConstrsSet="constrs_1" Description="Vivado Implementation Defaults" State="current" Dir="$PRUNDIR/impl_1" LaunchTime="1391636236">
+		<File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+		<File Type="OPT-DRC" Name="keypadTest_drc_opted.rpt"/>
+		<File Type="PLACE-IO" Name="keypadTest_io_placed.rpt"/>
+		<File Type="PLACE-CLK" Name="keypadTest_clock_utilization_placed.rpt"/>
+		<File Type="PLACE-UTIL" Name="keypadTest_utilization_placed.rpt"/>
+		<File Type="PLACE-UTIL-PB" Name="keypadTest_utilization_placed.pb"/>
+		<File Type="PLACE-CTRL" Name="keypadTest_control_sets_placed.rpt"/>
+		<File Type="PLACE-SIMILARITY" Name="keypadTest_incremental_reuse_placed.rpt"/>
+		<File Type="PLACE-PRE-SIMILARITY" Name="keypadTest_incremental_reuse_pre_placed.rpt"/>
+		<File Type="PA-TCL" Name="keypadTest.tcl"/>
+		<File Type="ROUTE-DRC" Name="keypadTest_drc_routed.rpt"/>
+		<File Type="ROUTE-DRC-PB" Name="keypadTest_drc_routed.pb"/>
+		<File Type="ROUTE-PWR" Name="keypadTest_power_routed.rpt"/>
+		<File Type="ROUTE-PWR-SUM" Name="keypadTest_power_summary_routed.pb"/>
+		<File Type="ROUTE-STATUS" Name="keypadTest_route_status.rpt"/>
+		<File Type="ROUTE-STATUS-PB" Name="keypadTest_route_status.pb"/>
+		<File Type="ROUTE-DCP" Name="keypadTest_routed.dcp"/>
+		<File Type="ROUTE-TIMINGSUMMARY" Name="keypadTest_timing_summary_routed.rpt"/>
+		<File Type="ROUTE-TIMING-PB" Name="keypadTest_timing_summary_routed.pb"/>
+		<File Type="ROUTE-SIMILARITY" Name="keypadTest_incremental_reuse_routed.rpt"/>
+		<File Type="OPT-DCP" Name="keypadTest_opt.dcp"/>
+		<File Type="RDI-RDI" Name="keypadTest.rdi"/>
+		<File Type="PLACE-DCP" Name="keypadTest_placed.dcp"/>
+		<File Type="PWROPT-DCP" Name="keypadTest_pwropt.dcp"/>
+		<File Type="POSTPLACE-PWROPT-DCP" Name="keypadTest_postplace_pwropt.dcp"/>
+		<File Type="PWROPT-DRC" Name="keypadTest_drc_pwropted.rpt"/>
+		<File Type="PHYSOPT-DCP" Name="keypadTest_physopt.dcp"/>
+		<File Type="PHYSOPT-DRC" Name="keypadTest_drc_physopted.rpt"/>
+		<File Type="BG-BIT" Name="keypadTest.bit"/>
+		<File Type="BG-DRC" Name="keypadTest.drc"/>
+		<File Type="BG-BGN" Name="keypadTest.bgn"/>
+		<File Type="BG-BIN" Name="keypadTest.bin"/>
+		<File Type="BITSTR-MSK" Name="keypadTest.msk"/>
+		<File Type="BITSTR-RBT" Name="keypadTest.rbt"/>
+		<File Type="BITSTR-NKY" Name="keypadTest.nky"/>
+		<File Type="BITSTR-BMM" Name="keypadTest_bd.bmm"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+	</Run>
+</Runs>
+

@@ -1,0 +1,13 @@
+17:06:05.192 INFO  - Processing command line option -hwspec U:/private/psTest/psTest.sdk/SDK/SDK_Export/hw/pstest.xml. 
+17:50:05.106 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:50:05.206 INFO  - PS initialization will be done as it is not done before. 
+17:50:05.207 INFO  - Running PS initialization.... 
+17:50:05.306 INFO  - ps7_init is completed. 
+17:50:05.406 INFO  - PS Initialization is complete. 
+17:50:22.568 INFO  - Processor reset is completed for ps7_cortexa9_0 
+17:50:34.016 INFO  - Processor reset is completed for ps7_cortexa9_0 
+02:12:21.654 ERROR - Unexpected error while fetching XMD's response:  java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+
+02:12:21.658 ERROR - Zero sized response read from XMD. This indicates a communication error or a programming error. 

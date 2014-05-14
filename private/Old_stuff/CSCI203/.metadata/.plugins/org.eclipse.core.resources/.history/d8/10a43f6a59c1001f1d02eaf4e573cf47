@@ -1,0 +1,20 @@
+/**
+ * CSCI 203, Yifan Ge
+ * Sep 16, 2010, 1:58:02 AM
+ */
+
+/**
+ * @author GALEN
+ *
+ */
+public class MyCalendar {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

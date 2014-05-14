@@ -1,0 +1,47 @@
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+
+/**
+ * This class represents a sky full of stars.
+ *
+ * @author Rick Zaccone
+ */
+public class Stars {
+    private ArrayList<Point2D.Double> stars;
+
+    /**
+     * Constructs a Stars object.
+     */
+    public Stars() {
+
+        // Your work here.
+
+    }
+
+    /**
+     * Adds a star to the list of stars.
+     *
+     * @param point
+     *            the star to add
+     */
+    public void add(Point2D.Double point) {
+
+        // Your work here.
+
+    }
+
+    /**
+     * Draws the stars.
+     *
+     * @param g2
+     *            the graphics context
+     */
+    public void draw(Graphics2D g2) {
+
+        // Your work here.
+
+    }
+}

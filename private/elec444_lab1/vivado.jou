@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Jan 30 07:58:40 2014
+# Process ID: 5940
+# Log file: H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/vivado.log
+# Journal file: H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:\Users\ygg001.BUCKNELL\Desktop\elec444_lab1\elec444_lab1.xpr}
+launch_xsim -simset sim_1 -mode behavioral
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw
+connect_hw_server -host localhost -port 60001
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248446632]
+open_hw_target
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+set_property PROBES.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/debug_nets.ltx} [lindex [get_hw_devices] 1]
+current_hw_device [lindex [get_hw_devices] 1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 1]
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+launch_xsim -simset sim_1 -mode behavioral
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+set_property runtime 1000ns [get_filesets sim_1]
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+save_wave_config {H:\Users\ygg001.BUCKNELL\Desktop\elec444_lab1\lab1NumberGuess_tb_behav3.wcfg}
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+launch_xsim -simset sim_1 -mode behavioral
+launch_xsim -simset sim_1 -mode behavioral
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+set_property PROGRAM.FILE {H:/Users/ygg001.BUCKNELL/Desktop/elec444_lab1/elec444_lab1.runs/impl_1/lab1NumberGuess.bit} [lindex [get_hw_devices] 1]
+program_hw_devices [lindex [get_hw_devices] 1]
+refresh_hw_device [lindex [get_hw_devices] 1]
+close_sim

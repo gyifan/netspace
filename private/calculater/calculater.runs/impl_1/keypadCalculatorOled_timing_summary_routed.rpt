@@ -1,0 +1,463 @@
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2013.4 (win64) Build 353583 Mon Dec  9 17:49:19 MST 2013
+| Date         : Thu Feb 13 10:58:42 2014
+| Host         : DANA307-07 running 64-bit Service Pack 1  (build 7601)
+| Command      : report_timing_summary -file keypadCalculatorOled_timing_summary_routed.rpt -pb keypadCalculatorOled_timing_summary_routed.pb
+| Design       : keypadCalculatorOled
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.09 2013-11-22
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Check Timing
+| ------------
+------------------------------------------------------------------------------------------------
+
+
+Checking 'no_clock'.
+ There are 0 register/latch pins with constant_clock.
+ There are 4 register/latch pins with no clock driven by: keypadCalculator_inst/keypadController_inst/slowest/counter_reg[19]/Q and possible clock pin by: keypadCalculator_inst/keypadController_inst/slowest/counter_reg[19]/Q 
+ There are 8 register/latch pins with no clock driven by: keypadCalculator_inst/slowclock_inst/counter_reg[15]/Q and possible clock pin by: keypadCalculator_inst/slowclock_inst/counter_reg[15]/Q 
+
+Checking 'unconstrained_internal_endpoints'.
+ There are 187 pins that are not constrained for maximum delay.
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+Checking 'no_input_delay'.
+ There are 5 input ports with no input delay specified.
+
+Checking 'no_output_delay'.
+ There are 13 ports with no output delay specified.
+
+Checking 'multiple_clock'.
+ There are 0 register/latch pins with related clocks.
+ There are 0 register/latch pins with exclusive clocks.
+
+Checking 'generated_clocks'.
+ There are 0 generated clocks that are not connected to a clock source.
+
+Checking 'loops'.
+ There are 2 combinational loops in the design.
+
+Checking 'partial_input_delay'.
+ There are 0 input ports with partial input delay specified.
+
+Checking 'partial_output_delay'.
+ There are 0 ports with partial output delay specified.
+
+Checking 'unexpandable_clocks'.
+ There are 0 related clock pairs.
+ There are 0 User Ignored clock pairs.
+
+Checking 'latch_loops'.
+ There are 0 combinational latch loops in the design through latch input
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     -7.341     -103.702                    160                 1338        0.048        0.000                      0                 1338        4.500        0.000                       0                   619  
+
+
+Timing constraints are not met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+sys_clk_pin        -7.341     -103.702                    160                 1306        0.048        0.000                      0                 1306        4.500        0.000                       0                   619  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**  sys_clk_pin        sys_clk_pin              1.221        0.000                      0                   32        1.176        0.000                      0                   32  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :          160  Failing Endpoints,  Worst Slack       -7.341ns,  Total Violation     -103.702ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.048ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (VIOLATED) :        -7.341ns  (required time - arrival time)
+  Source:                 keypadCalculator_inst/calculator_inst/shiftTwo/hund_reg[1]/C
+                            (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            oledCtrl_inst/Example/input_screen_reg[3][15][1]/D
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        17.301ns  (logic 5.639ns (32.594%)  route 11.662ns (67.406%))
+  Logic Levels:           20  (CARRY4=6 LUT3=2 LUT5=4 LUT6=8)
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.123ns = ( 15.123 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.592ns
+    Clock Pessimism Removal (CPR):    0.433ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  IBUF/O
+                         net (fo=1, routed)           2.171     3.661    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         1.830     5.592    keypadCalculator_inst/calculator_inst/shiftTwo/clk_BUFG
+    SLICE_X4Y12                                                       r  keypadCalculator_inst/calculator_inst/shiftTwo/hund_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X4Y12          FDCE (Prop_fdce_C_Q)         0.518     6.110 r  keypadCalculator_inst/calculator_inst/shiftTwo/hund_reg[1]/Q
+                         net (fo=4, routed)           0.763     6.873    keypadCalculator_inst/calculator_inst/shiftTwo/n_0_hund_reg[1]
+    SLICE_X4Y14          LUT3 (Prop_lut3_I2_O)        0.124     6.997 r  keypadCalculator_inst/calculator_inst/shiftTwo/input_screen[3][13][0]_i_75/O
+                         net (fo=1, routed)           0.000     6.997    keypadCalculator_inst/calculator_inst/shiftTwo/n_0_input_screen[3][13][0]_i_75
+    SLICE_X4Y14          CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.578     7.575 r  keypadCalculator_inst/calculator_inst/shiftTwo/input_screen_reg[3][13][0]_i_67/O[2]
+                         net (fo=1, routed)           0.599     8.175    keypadCalculator_inst/calculator_inst/shiftTwo/C[7]
+    SLICE_X5Y11          LUT5 (Prop_lut5_I4_O)        0.301     8.476 r  keypadCalculator_inst/calculator_inst/shiftTwo/input_screen[3][13][0]_i_54/O
+                         net (fo=1, routed)           0.000     8.476    keypadCalculator_inst/calculator_inst/shiftTwo/n_0_input_screen[3][13][0]_i_54
+    SLICE_X5Y11          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     8.877 r  keypadCalculator_inst/calculator_inst/shiftTwo/input_screen_reg[3][13][0]_i_42/CO[3]
+                         net (fo=1, routed)           0.000     8.877    keypadCalculator_inst/calculator_inst/shiftTwo/n_0_input_screen_reg[3][13][0]_i_42
+    SLICE_X5Y12          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     9.211 r  keypadCalculator_inst/calculator_inst/shiftTwo/input_screen_reg[3][13][0]_i_40/O[1]
+                         net (fo=1, routed)           0.307     9.518    n_102_keypadCalculator_inst
+    SLICE_X4Y13          CARRY4 (Prop_carry4_S[1]_O[3])
+                                                      0.946    10.464 r  calculator_inst/shiftTwo/input_screen_reg[3][13][0]_i_20/O[3]
+                         net (fo=2, routed)           0.602    11.065    n_4_calculator_inst/shiftTwo/input_screen_reg[3][13][0]_i_20
+    SLICE_X6Y13          LUT3 (Prop_lut3_I0_O)        0.307    11.372 r  calculator_inst/input_screen[3][13][0]_i_8/O
+                         net (fo=1, routed)           0.000    11.372    n_0_calculator_inst/input_screen[3][13][0]_i_8
+    SLICE_X6Y13          CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.376    11.748 r  calculator_inst/input_screen_reg[3][13][0]_i_2/CO[3]
+                         net (fo=1, routed)           0.000    11.748    n_0_calculator_inst/input_screen_reg[3][13][0]_i_2
+    SLICE_X6Y14          CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.219    11.967 r  calculator_inst/input_screen_reg[3][12][1]_i_6/O[0]
+                         net (fo=15, routed)          1.099    13.066    oledCtrl_inst/Example/result[11]
+    SLICE_X7Y14          LUT6 (Prop_lut6_I5_O)        0.295    13.361 r  oledCtrl_inst/Example/input_screen[3][13][2]_i_3/O
+                         net (fo=5, routed)           1.054    14.415    oledCtrl_inst/Example/keypadCalculator_inst/calculator_inst/bin2bcdDec4_result/m4/out[2]
+    SLICE_X6Y17          LUT6 (Prop_lut6_I5_O)        0.124    14.539 r  oledCtrl_inst/Example/input_screen[3][13][3]_i_5/O
+                         net (fo=11, routed)          0.712    15.251    oledCtrl_inst/Example/keypadCalculator_inst/calculator_inst/bin2bcdDec4_result/m5/out[2]
+    SLICE_X5Y18          LUT6 (Prop_lut6_I5_O)        0.124    15.375 r  oledCtrl_inst/Example/input_screen[3][14][0]_i_3/O
+                         net (fo=7, routed)           0.858    16.233    oledCtrl_inst/Example/keypadCalculator_inst/calculator_inst/bin2bcdDec4_result/m6/out[1]
+    SLICE_X7Y18          LUT6 (Prop_lut6_I5_O)        0.124    16.357 r  oledCtrl_inst/Example/input_screen[3][14][2]_i_14/O
+                         net (fo=5, routed)           0.760    17.116    oledCtrl_inst/Example/O5
+    SLICE_X4Y19          LUT5 (Prop_lut5_I0_O)        0.124    17.240 r  oledCtrl_inst/Example/input_screen[3][14][1]_i_2/O
+                         net (fo=10, routed)          0.880    18.120    oledCtrl_inst/Example/n_0_input_screen[3][14][1]_i_2
+    SLICE_X6Y20          LUT6 (Prop_lut6_I5_O)        0.124    18.244 r  oledCtrl_inst/Example/input_screen[3][14][2]_i_3/O
+                         net (fo=11, routed)          0.757    19.001    oledCtrl_inst/Example/keypadCalculator_inst/calculator_inst/bin2bcdDec4_result/m8/out[1]
+    SLICE_X7Y21          LUT5 (Prop_lut5_I4_O)        0.124    19.125 r  oledCtrl_inst/Example/input_screen[3][15][3]_i_38/O
+                         net (fo=12, routed)          0.914    20.039    oledCtrl_inst/Example/keypadCalculator_inst/calculator_inst/bin2bcdDec4_result/m9/out[2]
+    SLICE_X6Y21          LUT5 (Prop_lut5_I3_O)        0.124    20.163 f  oledCtrl_inst/Example/input_screen[3][15][3]_i_28/O
+                         net (fo=5, routed)           0.848    21.011    oledCtrl_inst/Example/keypadCalculator_inst/calculator_inst/bin2bcdDec4_result/m10/out[2]
+    SLICE_X6Y23          LUT6 (Prop_lut6_I0_O)        0.124    21.135 r  oledCtrl_inst/Example/input_screen[3][15][3]_i_16/O
+                         net (fo=8, routed)           0.702    21.837    oledCtrl_inst/Example/n_0_input_screen[3][15][3]_i_16
+    SLICE_X7Y23          LUT6 (Prop_lut6_I4_O)        0.124    21.961 r  oledCtrl_inst/Example/input_screen[3][15][1]_i_5/O
+                         net (fo=1, routed)           0.808    22.769    oledCtrl_inst/Example/n_0_input_screen[3][15][1]_i_5
+    SLICE_X7Y23          LUT6 (Prop_lut6_I5_O)        0.124    22.893 r  oledCtrl_inst/Example/input_screen[3][15][1]_i_1/O
+                         net (fo=1, routed)           0.000    22.893    oledCtrl_inst/Example/resultBCD[1]
+    SLICE_X7Y23          FDRE                                         r  oledCtrl_inst/Example/input_screen_reg[3][15][1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  IBUF/O
+                         net (fo=1, routed)           1.972    13.392    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         1.640    15.123    oledCtrl_inst/Example/clk_BUFG
+    SLICE_X7Y23                                                       r  oledCtrl_inst/Example/input_screen_reg[3][15][1]/C
+                         clock pessimism              0.433    15.556    
+                         clock uncertainty           -0.035    15.521    
+    SLICE_X7Y23          FDRE (Setup_fdre_C_D)        0.031    15.552    oledCtrl_inst/Example/input_screen_reg[3][15][1]
+  -------------------------------------------------------------------
+                         required time                         15.552    
+                         arrival time                         -22.893    
+  -------------------------------------------------------------------
+                         slack                                 -7.341    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.048ns  (arrival time - required time)
+  Source:                 oledCtrl_inst/Example/temp_addr_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             sys_clk_pin
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        0.288ns  (logic 0.141ns (48.973%)  route 0.147ns (51.027%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.056ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.093ns
+    Source Clock Delay      (SCD):    1.537ns
+    Clock Pessimism Removal (CPR):    0.499ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  IBUF/O
+                         net (fo=1, routed)           0.663     0.921    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         0.590     1.537    oledCtrl_inst/Example/clk_BUFG
+    SLICE_X23Y12                                                      r  oledCtrl_inst/Example/temp_addr_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X23Y12         FDRE (Prop_fdre_C_Q)         0.141     1.678 r  oledCtrl_inst/Example/temp_addr_reg[3]/Q
+                         net (fo=1, routed)           0.147     1.825    oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/addra[3]
+    RAMB18_X1Y4          RAMB18E1                                     r  oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/ADDRARDADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  IBUF/O
+                         net (fo=1, routed)           0.719     1.165    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         0.898     2.093    oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/clka
+    RAMB18_X1Y4                                                       r  oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+                         clock pessimism             -0.499     1.593    
+    RAMB18_X1Y4          RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[6])
+                                                      0.183     1.776    oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+  -------------------------------------------------------------------
+                         required time                         -1.776    
+                         arrival time                           1.825    
+  -------------------------------------------------------------------
+                         slack                                  0.048    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         sys_clk_pin
+Waveform:           { 0 5 }
+Period:             10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required  Actual  Slack  Location      Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576     10.000  7.424  RAMB18_X1Y4   oledCtrl_inst/Example/charlib_n/U0/inst_blk_mem_gen/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM18.ram/CLKARDCLK
+Low Pulse Width   Slow    FDRE/C              n/a            0.500     5.000   4.500  SLICE_X20Y17  oledCtrl_inst/Example/SPI_COMP/FSM_onehot_current_state_reg[1]/C
+High Pulse Width  Slow    FDRE/C              n/a            0.500     5.000   4.500  SLICE_X7Y13   keypadCalculator_inst/calculator_inst/op_reg_reg/C
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  sys_clk_pin
+  To Clock:  sys_clk_pin
+
+Setup :            0  Failing Endpoints,  Worst Slack        1.221ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.176ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.221ns  (required time - arrival time)
+  Source:                 keypadCalculator_inst/keypadController_inst/rowOut_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            keypadCalculator_inst/calculator_inst/shiftOne/ten_reg[0]/CLR
+                            (recovery check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        8.276ns  (logic 2.010ns (24.286%)  route 6.266ns (75.714%))
+  Logic Levels:           7  (LUT2=3 LUT3=1 LUT5=2 LUT6=1)
+  Clock Path Skew:        -0.062ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.137ns = ( 15.137 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.593ns
+    Clock Pessimism Removal (CPR):    0.394ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.490     1.490 r  IBUF/O
+                         net (fo=1, routed)           2.171     3.661    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     3.762 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         1.831     5.593    keypadCalculator_inst/keypadController_inst/clk_BUFG
+    SLICE_X2Y12                                                       r  keypadCalculator_inst/keypadController_inst/rowOut_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X2Y12          FDRE (Prop_fdre_C_Q)         0.518     6.111 r  keypadCalculator_inst/keypadController_inst/rowOut_reg[3]/Q
+                         net (fo=12, routed)          0.991     7.102    keypadCalculator_inst/keypadController_inst/rowOut[3]
+    SLICE_X3Y11          LUT5 (Prop_lut5_I1_O)        0.124     7.226 f  keypadCalculator_inst/keypadController_inst/hund[3]_i_8/O
+                         net (fo=2, routed)           0.572     7.798    keypadCalculator_inst/keypadController_inst/n_0_hund[3]_i_8
+    SLICE_X2Y10          LUT5 (Prop_lut5_I4_O)        0.116     7.914 f  keypadCalculator_inst/keypadController_inst/hund[3]_i_7/O
+                         net (fo=1, routed)           0.495     8.409    keypadCalculator_inst/keypadController_inst/n_0_hund[3]_i_7
+    SLICE_X2Y11          LUT6 (Prop_lut6_I5_O)        0.328     8.737 f  keypadCalculator_inst/keypadController_inst/hund[3]_i_4/O
+                         net (fo=2, routed)           0.773     9.510    keypadCalculator_inst/keypadController_inst/n_0_hund[3]_i_4
+    SLICE_X9Y11          LUT2 (Prop_lut2_I0_O)        0.118     9.628 f  keypadCalculator_inst/keypadController_inst/hund[3]_i_3/O
+                         net (fo=13, routed)          0.761    10.389    keypadCalculator_inst/keypadController_inst/O6
+    SLICE_X9Y13          LUT3 (Prop_lut3_I2_O)        0.326    10.715 f  keypadCalculator_inst/keypadController_inst/state[2]_i_2/O
+                         net (fo=5, routed)           0.603    11.318    keypadCalculator_inst/keypadController_inst/O2
+    SLICE_X9Y12          LUT2 (Prop_lut2_I0_O)        0.153    11.471 f  keypadCalculator_inst/keypadController_inst/state[0]_i_3/O
+                         net (fo=2, routed)           0.416    11.887    keypadCalculator_inst/keypadController_inst/p_0_in
+    SLICE_X9Y12          LUT2 (Prop_lut2_I0_O)        0.327    12.214 f  keypadCalculator_inst/keypadController_inst/hund[3]_i_2/O
+                         net (fo=66, routed)          1.656    13.870    keypadCalculator_inst/calculator_inst/shiftOne/AR[0]
+    SLICE_X7Y7           FDCE                                         f  keypadCalculator_inst/calculator_inst/shiftOne/ten_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                     10.000    10.000 r  
+    Y9                                                0.000    10.000 r  clk
+                         net (fo=0)                   0.000    10.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         1.420    11.420 r  IBUF/O
+                         net (fo=1, routed)           1.972    13.392    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    13.483 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         1.654    15.137    keypadCalculator_inst/calculator_inst/shiftOne/clk_BUFG
+    SLICE_X7Y7                                                        r  keypadCalculator_inst/calculator_inst/shiftOne/ten_reg[0]/C
+                         clock pessimism              0.394    15.531    
+                         clock uncertainty           -0.035    15.496    
+    SLICE_X7Y7           FDCE (Recov_fdce_C_CLR)     -0.405    15.091    keypadCalculator_inst/calculator_inst/shiftOne/ten_reg[0]
+  -------------------------------------------------------------------
+                         required time                         15.091    
+                         arrival time                         -13.870    
+  -------------------------------------------------------------------
+                         slack                                  1.221    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             1.176ns  (arrival time - required time)
+  Source:                 keypadCalculator_inst/calculator_inst/singleClkSigGen_valid/outSig_reg/C
+                            (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            keypadCalculator_inst/calculator_inst/shiftTwo/one_reg[0]/CLR
+                            (removal check against rising-edge clock sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
+  Data Path Delay:        1.121ns  (logic 0.209ns (18.639%)  route 0.912ns (81.361%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.037ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.084ns
+    Source Clock Delay      (SCD):    1.567ns
+    Clock Pessimism Removal (CPR):    0.480ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.258     0.258 r  IBUF/O
+                         net (fo=1, routed)           0.663     0.921    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.947 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         0.620     1.567    keypadCalculator_inst/calculator_inst/singleClkSigGen_valid/clk_BUFG
+    SLICE_X0Y12                                                       r  keypadCalculator_inst/calculator_inst/singleClkSigGen_valid/outSig_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y12          FDRE (Prop_fdre_C_Q)         0.164     1.731 f  keypadCalculator_inst/calculator_inst/singleClkSigGen_valid/outSig_reg/Q
+                         net (fo=7, routed)           0.464     2.195    keypadCalculator_inst/keypadController_inst/validSig
+    SLICE_X9Y12          LUT2 (Prop_lut2_I1_O)        0.045     2.240 f  keypadCalculator_inst/keypadController_inst/hund[3]_i_2/O
+                         net (fo=66, routed)          0.448     2.688    keypadCalculator_inst/calculator_inst/shiftTwo/AR[0]
+    SLICE_X5Y11          FDCE                                         f  keypadCalculator_inst/calculator_inst/shiftTwo/one_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock sys_clk_pin rise edge)
+                                                      0.000     0.000 r  
+    Y9                                                0.000     0.000 r  clk
+                         net (fo=0)                   0.000     0.000    clk
+    Y9                   IBUF (Prop_ibuf_I_O)         0.446     0.446 r  IBUF/O
+                         net (fo=1, routed)           0.719     1.165    xlnx_opt_
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.194 r  clk_BUFG_inst/O
+                         net (fo=618, routed)         0.890     2.084    keypadCalculator_inst/calculator_inst/shiftTwo/clk_BUFG
+    SLICE_X5Y11                                                       r  keypadCalculator_inst/calculator_inst/shiftTwo/one_reg[0]/C
+                         clock pessimism             -0.480     1.604    
+    SLICE_X5Y11          FDCE (Remov_fdce_C_CLR)     -0.092     1.512    keypadCalculator_inst/calculator_inst/shiftTwo/one_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.512    
+                         arrival time                           2.688    
+  -------------------------------------------------------------------
+                         slack                                  1.176    
+
+
+
+
+

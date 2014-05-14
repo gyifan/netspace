@@ -1,0 +1,136 @@
+11:10:49.174 INFO  - Processing command line option -hwspec U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml. 
+12:45:51.657 INFO  - Processor reset is completed for ps7_cortexa9_0 
+12:45:51.757 INFO  - PS initialization will be done as it is not done before. 
+12:45:51.758 INFO  - Running PS initialization.... 
+12:45:51.857 INFO  - ps7_init is completed. 
+12:45:51.957 INFO  - ps7_post_config is completed. 
+12:45:52.057 INFO  - PS Initialization is complete. 
+12:49:01.292 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:05:29.124 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:50:20.007 INFO  - Processor reset is completed for ps7_cortexa9_0 
+13:50:23.627 ERROR - Unexpected error while launching program. java.lang.RuntimeException: No Active System
+    
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+13:50:39.760 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+01:03:54.004 INFO  - Processing command line option -hwspec U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml. 
+01:03:56.789 INFO  - The hardware specification for project 'hw_platform_0' is different from U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml. 
+01:03:57.009 INFO  - Copied contents of U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+01:03:58.563 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+01:03:59.289 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+01:03:59.491 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+01:04:00.107 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+01:04:00.120 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+01:04:00.451 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+01:04:02.944 INFO  - Updating MSS for Board Support Package Project: juliaSetComp_bsp.
+		 The following driver assignments were removed:
+			Peripheral Instance: axi_bram_0, driver: generic_v1_00_a.
+		 The following new driver assignments were made:
+			Peripheral Instance: axi_bram_8reg_0, driver: generic_v1_00_a.
+ 
+01:04:03.725 INFO  - Updating hardware inferred compiler options for juliaSetComp. 
+01:04:03.729 INFO  - Clearing existing target manager status. 
+01:27:16.624 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:27:16.628 INFO  - PS initialization will be done as it is not done before. 
+01:27:16.629 INFO  - Running PS initialization.... 
+01:27:16.730 INFO  - ps7_init is completed. 
+01:27:16.830 INFO  - ps7_post_config is completed. 
+01:27:16.835 INFO  - PS Initialization is complete. 
+01:28:35.518 INFO  - ps7_cortexa9_0 Processor is in use. Please stop existing Run or Debug sessions before launching. 
+01:28:39.006 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:28:43.022 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Failed to download ELF file
+
+
+    AP transaction timeout: ACK = 0x01, expected=0x02)
+    Error Address = 0x00000000, Size = 0x00000004
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.downloadELF(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+01:30:28.521 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+01:31:02.467 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  
+01:38:42.342 INFO  - Processing command line option -hwspec U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml. 
+01:38:43.910 INFO  - The hardware specification for project 'hw_platform_0' is different from U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml. 
+01:38:44.041 INFO  - Copied contents of U:/public/VGA_PS/VGA_PS.sdk/SDK/SDK_Export/hw/system.xml into \hw_platform_0\system.xml. 
+01:38:44.926 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\system_top.bit into \hw_platform_0\system.bit. 
+01:38:45.829 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.c into \hw_platform_0\ps7_init.c. 
+01:38:46.493 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.h into \hw_platform_0\ps7_init.h. 
+01:38:46.787 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.html into \hw_platform_0\ps7_init.html. 
+01:38:47.906 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_summary.html into \hw_platform_0\ps7_summary.html. 
+01:38:47.936 INFO  - Copied contents of U:\public\VGA_PS\VGA_PS.sdk\SDK\SDK_Export\hw\ps7_init.tcl into \hw_platform_0\ps7_init.tcl. 
+01:38:48.368 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+01:40:14.554 INFO  - Updating hardware inferred compiler options for juliaSetComp. 
+01:40:14.585 INFO  - Clearing existing target manager status. 
+01:40:46.407 ERROR - Unexpected error while launching program. java.lang.RuntimeException: Error in Resetting Target
+
+    Could not stop the processor after reset
+
+
+	at com.xilinx.sdk.targetmanager.internal.TM.doProcessorReset(Unknown Source)
+	at com.xilinx.sdk.debug.core.internal.AppRunner.run(Unknown Source)
+
+01:41:52.518 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:41:52.521 INFO  - PS initialization will be done as it is not done before. 
+01:41:52.524 INFO  - Running PS initialization.... 
+01:41:52.624 INFO  - ps7_init is completed. 
+01:41:52.724 INFO  - ps7_post_config is completed. 
+01:41:52.824 INFO  - PS Initialization is complete. 
+01:44:39.296 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+01:44:49.702 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:44:49.802 INFO  - PS initialization will be done as it is not done before. 
+01:44:49.803 INFO  - Running PS initialization.... 
+01:44:49.901 INFO  - ps7_init is completed. 
+01:44:50.001 INFO  - ps7_post_config is completed. 
+01:44:50.101 INFO  - PS Initialization is complete. 
+01:45:26.686 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+01:46:22.397 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:46:22.497 INFO  - PS initialization will be done as it is not done before. 
+01:46:22.498 INFO  - Running PS initialization.... 
+01:46:22.599 INFO  - ps7_init is completed. 
+01:46:22.699 INFO  - ps7_post_config is completed. 
+01:46:22.799 INFO  - PS Initialization is complete. 
+01:53:27.516 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+01:54:16.451 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+01:54:33.963 INFO  - Processor reset is completed for ps7_cortexa9_0 
+01:54:33.966 INFO  - PS initialization will be done as it is not done before. 
+01:54:33.969 INFO  - Running PS initialization.... 
+01:54:34.075 INFO  - ps7_init is completed. 
+01:54:34.175 INFO  - ps7_post_config is completed. 
+01:54:34.179 INFO  - PS Initialization is complete. 
+01:55:32.138 ERROR - Checking FPGA configuration failed..Connection to Board Failed
+
+
+    Failed to Open JTAG Cable
+    Cable target is not connected to the host
+ 
+01:56:11.970 ERROR - Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near  

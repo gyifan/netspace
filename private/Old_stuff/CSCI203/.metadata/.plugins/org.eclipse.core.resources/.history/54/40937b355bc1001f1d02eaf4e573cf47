@@ -1,0 +1,25 @@
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+/**
+ * CSCI 203, Section 1, Yifan Ge
+ * Sep 16, 2010, 1:58:02 AM
+ */
+
+/**
+ * @author GALEN
+ * 
+ */
+public class MyCalendar {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		GregorianCalendar today = new GregorianCalendar();
+		GregorianCalendar myBirthday = new GregorianCalendar(1990,
+				Calendar.JANUARY, 15);
+
+	}
+
+}

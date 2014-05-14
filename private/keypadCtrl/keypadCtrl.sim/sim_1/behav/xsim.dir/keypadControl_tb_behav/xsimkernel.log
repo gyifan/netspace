@@ -1,0 +1,5 @@
+Running: xsim.dir/keypadControl_tb_behav/xsimk.exe -simmode gui -wdb keypadControl_tb_behav.wdb -simrunnum 0 -socket 51778
+Design successfully loaded
+Design Loading CPU Usage: 139 ms
+Simulation completed
+Simulation CPU Usage: 139 ms

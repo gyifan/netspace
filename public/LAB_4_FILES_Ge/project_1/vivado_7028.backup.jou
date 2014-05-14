@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Wed Feb 26 14:03:06 2014
+# Process ID: 2132
+# Log file: H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/vivado.log
+# Journal file: H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {H:\Users\ygg001\Desktop\LAB_4_FILES_Ge\project_1\project_1.xpr}
+open_bd_design {H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd}
+export_hardware [get_files H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd]
+launch_sdk -workspace H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml
+export_hardware [get_files H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.srcs/sources_1/bd/system/system.bd]
+launch_sdk -workspace H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export -hwspec H:/Users/ygg001/Desktop/LAB_4_FILES_Ge/project_1/project_1.sdk/SDK/SDK_Export/hw/system.xml

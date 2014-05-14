@@ -1,0 +1,29 @@
+t=[-10:0.01:10];
+
+% 4*f(t) vs t
+y = 4*f(t)
+plot(t,y,'*')
+figure(1)
+title('4*f(t) vs t')
+xlabel('t')
+ylabel('4*f(t)')
+
+% f(2*t) vs t
+y = f(2*t)
+
+% f(t/4) vs t
+y = f(t/4)
+% f(t+1) vs t
+y = f(t+1)
+% f(t-2) vs t
+y = f(t-2)
+% f((t-2)/2) vs t
+y = f((t-2)/2)
+% f((t+4)/0.5) vs t
+y = f((t+4
+
+y = func(t)
+plot(t,y,'*')
+figure(2)
+y1 = func(t-3)
+plot(t,y1,'*')

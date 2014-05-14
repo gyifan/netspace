@@ -1,0 +1,216 @@
+/*
+ * sound.c
+ *
+ *  Created on: Feb 20, 2014
+ *      Author: ajc029
+ */
+
+
+/***************************** Include Files *********************************/
+
+#include "xparameters.h"
+#include "xscutimer.h"
+#include "xtime_l.h"
+#include "xgpiops.h"
+#include "xil_printf.h"
+#include "xil_io.h"
+#include "fur_elise.h"
+
+/************************** Constant Definitions *****************************/
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are only defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define TIMER_DEVICE_ID		XPAR_XSCUTIMER_0_DEVICE_ID
+#define XTIMER_CONFIG_PTR	GLOBAL_TMR_BASEADDR + GTIMER_CONTROL_OFFSET
+#define XTIMER_HIGH_PTR		GLOBAL_TMR_BASEADDR + GTIMER_COUNTER_UPPER_OFFSET
+#define XTIMER_LOW_PTR		GLOBAL_TMR_BASEADDR + GTIMER_COUNTER_LOWER_OFFSET
+#define SOUND_RIGHT			11
+#define SOUND_LEFT			13
+
+/************************** Variable Definitions *****************************/
+
+XScuTimer pTimer;		/* Cortex A9 SCU Private Timer Instance */
+Xuint64 xTimer;			/* Global Timer value */
+XGpioPs psGpioInstancePtr; /* GPIO Instance Pointer */
+
+/*
+ * This function checks if the global timer reach the desired time.
+ * Return:
+ * 	1 - if the the global timer reached the time
+ * 	0 - if the the global timer didn't reach the time
+ */
+int checkGlobalTimer(u32* global_high, u32* global_low){
+
+	/*
+	 * global timer variables
+	 */
+	volatile u32 globalCntLow;
+	volatile u32 globalCntHigh;
+	volatile u32 globalCntHighPrev;
+
+	// reads the 64 global timer count
+	globalCntHighPrev = *global_high;
+	globalCntLow = *global_low;
+printf("globalCntHigh = %lu, Low = %lu\n\r", globalCntHighPrev, globalCntLow);
+	// read again the upper 32 bit of the global time
+	globalCntHigh = *global_high;
+
+	// Confirm the readings are correct
+	if(globalCntHigh == globalCntHighPrev){
+
+printf("globalCntHigh = %lu, Low = %lu\n\r", globalCntHigh, globalCntLow);
+		// If the timer reached xTimer value, return 1, otherwise return 0
+		if(globalCntHigh >= xTimer.Upper){
+			if(globalCntLow >= xTimer.Lower){
+				return 1;
+			}else
+				return 0;
+		}else
+			return 0;
+	}else
+		return 0;
+}
+
+/*
+ * Initialize the XGpioPs
+ * Return
+ * 	XST_SUCCESS or XST_FAILURE
+ */
+int initializeXGpioPs(){
+	XGpioPs_Config *GpioConfigPtr;
+	int xStatus;
+	GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+	if(GpioConfigPtr == NULL)
+		return XST_FAILURE;
+	xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr, GpioConfigPtr, GpioConfigPtr->BaseAddr);
+	if(XST_SUCCESS != xStatus){
+		print(" PS GPIO INIT FAILED \n\r");
+		return XST_FAILURE;
+	}else
+		return XST_SUCCESS;
+}
+
+int main () {
+
+	int Status;
+	int i;
+	volatile u64 temp;
+	int nextVal = 1;
+
+	// Timer counters variables
+	volatile u32 privateCnt = 0;
+
+	// Private timer variables
+	XScuTimer_Config *ConfigPtr;
+	XScuTimer *PrivateTimerPtr = &pTimer;
+
+	// Global timer variables
+	volatile u32 *XTimer_Config = XTIMER_CONFIG_PTR;
+	u32 *Global_Low_Addr = XTIMER_LOW_PTR;
+	u32 *Global_High_Addr = XTIMER_HIGH_PTR;
+
+	/*
+	 * Initialize the Scu Private Timer so that it is ready to use.
+	 */
+	ConfigPtr = XScuTimer_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+
+	/*
+	 * This is where the virtual address would be used, this example
+	 * uses physical address.
+	 */
+	Status = XScuTimer_CfgInitialize(PrivateTimerPtr, ConfigPtr,
+			ConfigPtr->BaseAddr);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+		xil_printf("initialize the private timer failed.\n\r");
+	}
+	XScuTimer_SetPrescaler(PrivateTimerPtr, 0xFF);
+
+	/*
+	 * Set global timer's property:
+	 *  1. Prescaler = 255
+	 *  2. Disable Auto increment
+	 *  3. Disable IRQ
+	 *  4. Disable Comparison
+	 *  5. Stop Timer
+	 */
+	*XTimer_Config = 0xFFFFFFF0;
+
+	/*
+	 * Set up the GPIOs. Make MIO13 and MIO11 as output pins
+	 */
+	Status = initializeXGpioPs();
+	if (XST_FAILURE == Status){
+		return Status; // Failed initialize the GPIOs
+	}
+	XGpioPs_SetDirectionPin(&psGpioInstancePtr, SOUND_LEFT, 1);
+	XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, SOUND_LEFT, 1);
+
+	XGpioPs_SetDirectionPin(&psGpioInstancePtr, SOUND_RIGHT, 1);
+	XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, SOUND_RIGHT, 1);
+
+
+
+	/*
+	 * Main for loop iterates until all the nodes are processed.
+	 */
+while(1){
+	for(i=0; i<TOTAL_NODE; i++){
+
+		// Stop global timer and set the initial value of global timer to 0 (It counts up)
+		*XTimer_Config = *XTimer_Config & 0xFFFFFFFE;
+		*Global_High_Addr = 0;
+		*Global_Low_Addr = 0;
+		// Set the xTimer value
+		xTimer.Upper = duration[i] >> 32;
+		temp = duration[i] << 32;
+		xTimer.Lower = temp >> 32;
+print("\n\r");
+checkGlobalTimer(Global_High_Addr, Global_Low_Addr);
+
+printf("xTimerUpper = %lu, Lower = %lu, PrivateTimer = %lu\n\r", xTimer.Upper, xTimer.Lower, XScuTimer_GetCounterValue(PrivateTimerPtr));
+printf("duration = %lld, period = %lu\n\r", duration[i], period[i]);
+printf("private prescalar = %d\n\r", XScuTimer_GetPrescaler(PrivateTimerPtr));
+
+		// Start global timer
+		*XTimer_Config = *XTimer_Config | 0x00000001;
+
+checkGlobalTimer(Global_High_Addr, Global_Low_Addr);
+
+printf("PrivateTimer = %lu\n\r",XScuTimer_GetCounterValue(PrivateTimerPtr));
+
+		// Checks the Global Timer until the Global Timer Counts up to the duration.
+		Status = checkGlobalTimer(Global_High_Addr, Global_Low_Addr);
+checkGlobalTimer(Global_High_Addr, Global_Low_Addr);
+		while(Status == 0){
+printf("Status = %d\n\r", Status);
+
+			// Stop the private timer and load the period
+			XScuTimer_Stop(PrivateTimerPtr);
+			XScuTimer_LoadTimer(PrivateTimerPtr, period[i]/2);
+
+			// Start private timer
+			XScuTimer_Start(PrivateTimerPtr);
+
+			// Set the sounds high
+			XGpioPs_WritePin(&psGpioInstancePtr,SOUND_LEFT, nextVal);
+			XGpioPs_WritePin(&psGpioInstancePtr,SOUND_RIGHT, nextVal);
+
+			do {
+				privateCnt = XScuTimer_GetCounterValue(PrivateTimerPtr);
+			} while(0 == privateCnt);
+			XGpioPs_WritePin(&psGpioInstancePtr,SOUND_LEFT, nextVal);
+			XGpioPs_WritePin(&psGpioInstancePtr,SOUND_RIGHT, nextVal);
+			nextVal = (nextVal == 1) ? 0 : 1;
+
+			Status = checkGlobalTimer(Global_High_Addr, Global_Low_Addr);
+		}
+	}
+}
+	return XST_SUCCESS;
+}
+
+

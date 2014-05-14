@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:u:/private/psTest/psTest.srcs/sources_1/bd/pstest/ip/pstest_processing_system7_0_0/pstest_processing_system7_0_0.xdc rfile:../../../psTest.srcs/sources_1/bd/pstest/ip/pstest_processing_system7_0_0/pstest_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:pstest_i/processing_system7_0/inst} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:28 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN "C14" [get_ports "MIO[49]"]
+set_property src_info {type:SCOPED_XDC file:1 line:34 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN "D11" [get_ports "MIO[48]"]

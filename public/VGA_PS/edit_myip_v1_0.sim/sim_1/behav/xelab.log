@@ -1,0 +1,19 @@
+Vivado Simulator 2013.4
+Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2013.4/bin/unwrapped/win64.o/xelab.exe --debug typical --relax -L work -L unisims_ver -L unimacro_ver -L secureip --snapshot myip_v1_0_behav --prj U:/public/VGA_PS/edit_myip_v1_0.sim/sim_1/behav/myip_v1_0.prj work.myip_v1_0 work.glbl 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/public/VGA_PS/myip_1.0/hdl/myip_v1_0_S00_AXI.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "U:/public/VGA_PS/myip_1.0/hdl/myip_v1_0.v" into library work
+INFO: [VRFC 10-165] Analyzing Verilog file "C:/Xilinx/Vivado/2013.4/data/verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Xilinx/Vivado/2013.4/data/verilog/src/glbl.v" Line 6. Module glbl has a timescale but atleast one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Xilinx/Vivado/2013.4/data/verilog/src/glbl.v" Line 6. Module glbl has a timescale but atleast one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.myip_v1_0_S00_AXI(C_S_AXI_DATA_W...
+Compiling module work.myip_v1_0
+Compiling module work.glbl
+Waiting for 2 sub-compilation(s) to finish...

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.4 (64-bit)
+# SW Build 353583 on Mon Dec  9 17:49:19 MST 2013
+# IP Build 208076 on Mon Dec  2 12:38:17 MST 2013
+# Start of session at: Thu Feb 27 08:52:22 2014
+# Process ID: 5080
+# Log file: H:/Users/ygg001/VGA_PS/VGA_PS.runs/impl_1/vga_hdmi.rdi
+# Journal file: H:/Users/ygg001/VGA_PS/VGA_PS.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source vga_hdmi.tcl -notrace
